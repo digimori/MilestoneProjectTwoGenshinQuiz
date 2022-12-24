@@ -1,8 +1,6 @@
 Second Milestone Project for Code Institute
 
-Okay so, we want a three layer quiz. Beginner - 10 questions Seasoned Adventurer - 10 Questions Archon of Lore - 10 Questions
-
-Beginner: Q1: Which region are the Knights of Favonius located?
+ Q1: Which region are the Knights of Favonius located?
 
 Khaenriah
 Liyue

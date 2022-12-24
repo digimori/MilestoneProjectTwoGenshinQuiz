@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,26 +16,27 @@ body {
 /* ----------------------------------------- Styles for 'Start Quiz' button ----------------------------------------- */
 
 #startQuiz,
-#info_box {
+#info_box,
+.quiz {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-};
 
-#startQuiz button { 
+}
+
+.buttonStyle {
     margin: 0 auto;
-    width: 50%;
+    width: 100%;
     font-weight: 450;
     font-size: 30px;
     color: #000;
     background-color: #fff;
     border-radius: 5px;
     padding: 12px 20px;
-    height: 45px;
+    height: 90px;
+    opacity: 0.9;
 }
-
-
 
 /* ------------------------------------------ How to Play box ------------------------------------------*/
 
@@ -56,10 +58,10 @@ body {
 }
 
 .quizRules {
-width: 80%;
-padding: 10px 30px;
-margin: 0 auto;
-font-weight: 600;
+    width: 80%;
+    padding: 10px 30px;
+    margin: 0 auto;
+    font-weight: 600;
 }
 
 .quizRules .info {
@@ -95,4 +97,114 @@ font-weight: 600;
 .buttons button:hover {
     color: #695E93;
     background-color: #fff;
+}
+
+/*----------------------------Quiz Box----------------------------*/
+
+.quiz {
+    display: none;
+    width: 600px;
+    background: #fff;
+    border-radius: 8px;    
+    color: #000;
+    box-shadow: 0px 1px 2px 1px;
+    height: 450px;
+}
+
+.questionText,
+.answerList {
+    color: #000;
+    padding: 3px;
+}
+
+.quiz header {
+height: 80px;
+padding: 10px 30px;
+background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-radius: 6px;
+color: darkgray;
+position: relative;
+z-index: 1000;
+box-shadow: 0px 4px 4px 1px;
+
+}
+
+.quiz header .title {
+    font-size: 25px;
+    font-weight: 700; 
+    color: #000;
+}
+
+/* ------------------------------- Quiz box - Main Body ------------------------------------*/
+
+.quiz .questionText {
+    padding: 10px 0px 20px 0px;
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 8px;
+}
+
+.totalQuestions {
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.quiz section {
+    padding: 20px 30px 10px 30px;
+    background-color: #fff;
+}
+
+.quiz .answerList {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 15px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.option {
+    background: lightgray;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #fff;
+    border: 2px solid lightgray;
+    color: #000;
+    cursor: pointer;
+}
+
+/*---------------------------Next Button-----------------------------*/
+
+.nextButton {
+    margin: 0 auto;
+    width: 30%;
+    font-weight: 450;
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 0px 10px 0px;
+    height: 60px;
+    opacity: 0.9;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.nextButton:hover {
+    color:#fff;
+    background-color: #000;
 }

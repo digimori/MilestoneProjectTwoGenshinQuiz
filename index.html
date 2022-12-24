@@ -11,7 +11,9 @@
 </head>
 <body>
 <!--Start button for quiz-->
-    <div id="startQuiz"><button>Start Quiz</button></div>
+    <div id="startQuiz">
+        <button class="buttonStyle">Start Quiz</button>
+    </div>
 
     <!--Information box-->
     <div id="info_box">
@@ -27,6 +29,42 @@
             <button class="exitQuiz">Exit Quiz</button>
             <button class="newGame">New Game</button>
          </div>
+    </div>
+
+    <!--Quiz box-->
+    <div class="quiz">
+        <header>
+            <div class="title">Genshin Impact Quiz</div>
+        </header>
+        <section>
+            <div class="questionText">
+                <span>First Question</span>
+            </div>
+            <div class="answerList">
+                <div class="option">
+                    <span>Answer no.1</span>
+                </div>
+                <div class="option">
+                    <span>Answer no.2</span>
+                </div>
+                <div class="option">
+                    <span>Answer no.3</span>
+                </div>
+            </div>
+        </section>
+<!-- Footer section -->
+<footer>
+    <div class="totalQuestions">
+        <p><span>1</span> of 12</p>
+    </div>
+    <button class="nextButton">Next Question</button>
+</footer>
+    </div>
+
+    <!-- Results box -->
+    <div class="results">
+        <div class="icon">Paimon thing here</div>
+        <h3>Congratulations! You've completed the quiz!</h3>
     </div>
 
     <script src="/assets/js/script.js"></script>
