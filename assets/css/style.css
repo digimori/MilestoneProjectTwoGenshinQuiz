@@ -17,7 +17,8 @@ body {
 
 #startQuiz,
 #info_box,
-.quiz {
+.quiz,
+.results {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -84,6 +85,7 @@ body {
 }
 
 .buttons button {
+    display: none;
     margin: 0 auto;
     font-size: 20px;
     font-weight: 700;
@@ -207,4 +209,71 @@ box-shadow: 0px 4px 4px 1px;
 .nextButton:hover {
     color:#fff;
     background-color: #000;
+}
+
+/*-------------------- Quiz Results section -------------------- */
+
+.results {
+background-color: #fff;
+width: 600px;
+padding: 25px;
+border-radius: 8px;
+text-align: center;
+}
+
+.results h3 {
+    padding-left: 10px;
+    font-size: 22px;
+}
+
+.score {
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score span {
+    display: flex;
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.score span p {
+    font-weight: 700;
+    padding: 0 5px;
+}
+
+.icon {
+    margin: 12px auto;
+    background-image: url('/assets/images/Hilichurl_3.png');
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+/*------------------------------------ Quiz result buttons ------------------------------------ */
+
+.newGame,
+.exitQuiz {
+    margin: 0 12px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    background-color: #695E93;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+.newGame:hover {
+    color: #695E93;
+    background-color: #fff;
+}
+
+.exitQuiz:hover { 
+    color: #695E93;
+    background-color: #fff;
 }
