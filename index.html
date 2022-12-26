@@ -1,106 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
-    <title>Document</title>
-</head>
+    <link rel="stylesheet" href="src/style.css">
+  </head>
 
-<body>
-    <!--Start button for quiz-->
-
-   <div class="startQuiz">
-        <button class="buttonStyle">Start Quiz</button>
+  <body>
+    <div class="startQuiz">
+      <button id="startButton">Start Quiz</button>
     </div>
 
     <!--Information box-->
     <div id="info_box">
-        <div class="ruleTitle">
-            <span>How to play</span>
+      <div class="ruleTitle">
+        <span>How to play</span>
+      </div>
+      <div class="quizRules">
+        <div class="info"><span class="bullet">◎</span> You can only select ONE answer at a time</div>
+        <div class="info"><span class="bullet">◎</span> No take-backsies, once selected, you've made your choice
         </div>
-        <div class="quizRules">
-            <div class="info"><span class="bullet">◎</span> You can only select ONE answer at a time</div>
-            <div class="info"><span class="bullet">◎</span> No take-backsies, once selected, you've made your choice
-            </div>
-            <div class="info"><span class="bullet">◎</span> You will accumulate points for correct answers</div>
-        </div>
-        <div class="buttons">
-            <button id="exitQuiz">Exit Quiz</button>
-            <button id="newGame">New Game</button>
-        </div>
+        <div class="info"><span class="bullet">◎</span> You will accumulate points for correct answers</div>
+      </div>
+      <div class="buttons">
+        <button id="exitQuizStart">Exit Quiz</button>
+        <button id="newGame">New Game</button>
+      </div>
     </div>
 
     <!--Quiz box-->
     <div id="quiz">
-        <header>
-            <div class="title">Genshin Impact Quiz</div>
-        </header>
-        <section>
-            <div id="questionText">
-                <span>First Question</span>
-            </div>
-            <div class="answerList">
-                <div class="option">
-                    <span>Answer no.1</span>
-                </div>
-                <div class="option">
-                    <span>Answer no.2</span>
-                </div>
-                <div class="option">
-                    <span>Answer no.3</span>
-                </div>
-            </div>
-        </section>
-        <!-- Footer section -->
-        <footer>
-            <div class="totalQuestions">
-                <p><span>1</span> of 12</p>
-            </div>
-            <button id="nextButton">Next Question</button>
-        </footer>
+      <header>
+        <div class="title">Genshin Impact Quiz</div>
+      </header>
+      <section>
+        <div class="questionText">
+        </div>
+        <div class="answerList">
+          <div class="option">
+            <span>Answer no.1</span>
+          </div>
+          <div class="option">
+            <span>Answer no.2</span>
+          </div>
+          <div class="option">
+            <span>Answer no.3</span>
+          </div>
+        </div>
+      </section>
+      <!-- Footer section -->
+      <footer>
+        <div class="totalQuestions">
+          <p><span>1</span> of 12</p>
+        </div>
+        <button id="nextButton">Next Question</button>
+      </footer>
     </div>
 
-    <!-- Results box -->      
-   
+    <!-- Results box -->
+
     <div id="results">
- <div class="icon">
+      <div class="icon">
       </div>
-      <div class="congrats"><h3>Congratulations! You've completed the quiz!</h3></div>
-    <div class="score">
+      <div class="congrats">
+        <h3>Congratulations! You've completed the quiz!</h3>
+      </div>
+      <div class="score">
         <span>You scored <p>0</p> out of <p>12</p></span>
+      </div>
+      <div class="endButtons">
+        <button id="newGamePlus">New Game?</button>
+        <button id="exitQuiz">Exit Quiz</button>
+      </div>
     </div>
-    <div class="endButtons">
-        <button class="newGame">New Game?</button>
-        <button class="exitQuiz">Exit Quiz</button>
-        <button class="TESTER">TESTING</button>
-  </div>
-</div>
 
-<script>
-
-//get all the elements first: 
-
-
-
-
-
-
-
-
-
-
-</script>
-
-<!--ADD AN OPTION FOR CONTACTING HERE USING EMAILJS INCASE OF LORE CHANGES. ADD THE BUTTON TO THE RESULTS PAGEW -->
-    <script src="/assets/js/script.js"></script>
-</body>
-
+    <!--ADD AN OPTION FOR CONTACTING HERE USING EMAILJS INCASE OF LORE CHANGES. ADD THE BUTTON TO THE RESULTS PAGEW -->
+ </body>
+<script src="/assets/js/script.js"></script>
 </html>

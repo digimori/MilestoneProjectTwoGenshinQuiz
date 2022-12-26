@@ -1,296 +1,290 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Philosopher', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Philosopher', sans-serif;
 }
 
 body {
-    background-image: url('/assets/images/backgroundforquiz.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-image: url('/assets/images/backgroundforquiz.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* ----------------------------------------- Styles for 'Start Quiz' button ----------------------------------------- */
 
-.startQuiz,
-#info_box,
+#startButton #info_box,
 #quiz,
 #results {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
-/*.info_box.showBox,
-.quiz.showBox, 
-.results.showBox {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-    z-index: 10000;
-    pointer-events: auto;
-}*/
+#startButton.showBox, 
+#info_box.showBox,
+#quiz.showBox, 
+#results.showBox {
+  z-index: 6;
+  opacity: 1;
+}
 
-.buttonStyle {
-    cursor: pointer;
-    margin: 0 auto;
-    width: 100%;
-    font-weight: 450;
-    font-size: 30px;
-    color: #000;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 12px 20px;
-    height: 90px;
-    opacity: 0.9;
+#startButton {
+  position:absolute;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 25%;
+  font-weight: 450;
+  font-size: 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 12px 20px;
+  height: 90px;
+  opacity: 0.9;
 }
 
 /* ------------------------------------------ How to Play box ------------------------------------------*/
 
 #info_box {
-    background-color: #fff;
-    width: 40%;
-    border-radius: 8px;
-    border: 2px solid black;
-    height: 350px;
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 0;
+  background-color: #fff;
+  width: 40%;
+  border-radius: 8px;
+  border: 2px solid black;
+  height: 350px;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
 }
 
 .ruleTitle {
-    text-align: center;
-    color: #000;
-    padding-top: 15px;
-    font-weight: 700;
-    font-size: 2em;
+  text-align: center;
+  color: #000;
+  padding-top: 15px;
+  font-weight: 700;
+  font-size: 2em;
 }
 
 .quizRules {
-    width: 80%;
-    padding: 10px 30px;
-    margin: 0 auto;
-    font-weight: 600;
+  width: 80%;
+  padding: 10px 30px;
+  margin: 0 auto;
+  font-weight: 600;
 }
 
 .quizRules .info {
-    margin: 5px 0;
-    font-size: 20px;
+  margin: 5px 0;
+  font-size: 20px;
 }
 
 .bullet {
-    font-weight: 700;
-    padding: 0 5px;
+  font-weight: 700;
+  padding: 0 5px;
 }
 
 .buttons {
-    height: 50px;
-    padding: 20px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: 30px;
+  height: 50px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 30px;
 }
 
 .buttons button {
-    margin: 0 auto;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 10px 20px;
-    background-color: #695E93;
-    color: #fff;
-    border-radius: 5px;
-    border: 2px solid #000;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px;
+  background-color: #695E93;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #000;
 }
 
 .buttons button:hover {
-    color: #695E93;
-    background-color: #fff;
+  color: #695E93;
+  background-color: #fff;
 }
 
 /*----------------------------Quiz Box----------------------------*/
 
 #quiz {
-    width: 600px;
-    background: #fff;
-    border-radius: 8px;    
-    color: #000;
-    box-shadow: 0px 1px 2px 1px;
-    height: 450px;
+  width: 600px;
+  background: #fff;
+  border-radius: 8px;
+  color: #000;
+  box-shadow: 0px 1px 2px 1px;
+  height: 450px;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(1);
+  display: none;
 
 }
 
-#questionText,
+.questionText,
 .answerList {
-    color: #000;
-    padding: 3px;
+  color: #000;
+  padding: 3px;
 }
 
 #quiz header {
-height: 80px;
-padding: 10px 30px;
-background-color: #fff;
-display: flex;
-align-items: center;
-justify-content: space-between;
-border-radius: 6px;
-color: darkgray;
-position: relative;
-z-index: 1000;
-box-shadow: 0px 4px 4px 1px;
+  height: 80px;
+  padding: 10px 30px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  color: darkgray;
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0px 4px 4px 1px;
 }
 
 #quiz header .title {
-    font-size: 25px;
-    font-weight: 700; 
-    color: #000;
+  font-size: 25px;
+  font-weight: 700;
+  color: #000;
 }
 
 /* ------------------------------- Quiz box - Main Body ------------------------------------*/
 
-#quiz #questionText {
-    padding: 10px 0px 20px 0px;
-    margin: 0 auto;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 8px;
+#quiz .questionText {
+  padding: 10px 0px 20px 0px;
+  margin: 0 auto;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 8px;
 }
 
 .totalQuestions {
-    font-size: 17px;
-    font-weight: 500;
-    color: #000;
-    border-bottom: 1px solid lightgrey;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  color: #000;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 #quiz section {
-    padding: 20px 30px 10px 30px;
-    background-color: #fff;
+  padding: 20px 30px 10px 30px;
+  background-color: #fff;
 }
 
 #quiz .answerList {
-    display: block;
-    margin: 0 auto;
-    padding: 5px 15px;
-    font-size: 17px;
-    font-weight: 500;
+  display: block;
+  margin: 0 auto;
+  padding: 5px 15px;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .option {
-    background: lightgray;
-    border: 2px solid darkgray;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px 0;
-    cursor: pointer;
+  background: lightgray;
+  border: 2px solid darkgray;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px 0;
+  cursor: pointer;
 }
 
 .option :hover {
-    background-color: #fff;
-    border: 2px solid lightgray;
-    color: #000;
-    cursor: pointer;
+  background-color: #fff;
+  border: 2px solid lightgray;
+  color: #000;
+  cursor: pointer;
 }
 
 /*---------------------------Next Button-----------------------------*/
 
 #nextButton {
-    margin: 0 auto;
-    width: 30%;
-    font-weight: 450;
-    font-size: 20px;
-    color: #000;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 10px 0px 10px 0px;
-    height: 60px;
-    opacity: 0.9;
-    display: flex;
-    align-items:center;
-    justify-content: center;
+  margin: 0 auto;
+  width: 30%;
+  font-weight: 450;
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 0px 10px 0px;
+  height: 60px;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #nextButton:hover {
-    color:#fff;
-    background-color: #000;
+  color: #fff;
+  background-color: #000;
 }
 
 /*-------------------- Quiz Results section -------------------- */
 
 #results {
-background-color: #fff;
-width: 600px;
-padding: 25px;
-border-radius: 8px;
-text-align: center;
-opacity: 0;
+  background-color: #fff;
+  width: 600px;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  display: none;
 }
 
 #results h3 {
-    padding-left: 10px;
-    font-size: 22px;
+  padding-left: 10px;
+  font-size: 22px;
 }
 
 .score {
-    margin: 0 auto;
-    background: #fff;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .score span {
-    display: flex;
-    margin: 8px 0;
-    font-size: 15px;
+  display: flex;
+  margin: 8px 0;
+  font-size: 15px;
 }
 
 .score span p {
-    font-weight: 700;
-    padding: 0 5px;
+  font-weight: 700;
+  padding: 0 5px;
 }
 
 .icon {
-    margin: 12px auto;
-    background-image: url('/assets/images/Hilichurl_3.png');
-    background-size: cover;
-    height: 200px;
-    width: 200px;
+  margin: 12px auto;
+  background-image: url('/assets/images/Hilichurl_3.png');
+  background-size: cover;
+  height: 200px;
+  width: 200px;
 }
 
 /*------------------------------------ Quiz result buttons ------------------------------------ */
 
-.newGame,
-.exitQuiz {
-    margin: 0 12px;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 10px 20px;
-    background-color: #695E93;
-    color: #fff;
-    border-radius: 5px;
-    border: 2px solid #000;
+#newGame,
+#newGamePlus,
+#exitQuizStart,
+#exitQuiz {
+  margin: 0 12px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px;
+  background-color: #695E93;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #000;
 }
 
-.newGame:hover {
-    color: #695E93;
-    background-color: #fff;
+#newGame:hover,
+#exitQuiz:hover,
+#exitQuizStart:hover,
+#newGamePlus:hover {
+  color: #695E93;
+  background-color: #fff;
 }
-
-.exitQuiz:hover { 
-    color: #695E93;
-    background-color: #fff;
-}
-
-
-
-
-
-.hide {
-    display: none;
- }
