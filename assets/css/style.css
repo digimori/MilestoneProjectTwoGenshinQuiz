@@ -58,14 +58,14 @@ body {
     font-size: 2em;
 }
 
-.quizRules {
+#quizRules {
     width: 80%;
     padding: 10px 30px;
     margin: 0 auto;
     font-weight: 600;
 }
 
-.quizRules .info {
+#quizRules .info {
     margin: 5px 0;
     font-size: 20px;
 }
