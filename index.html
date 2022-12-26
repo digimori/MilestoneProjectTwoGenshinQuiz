@@ -16,7 +16,8 @@
 
 <body>
     <!--Start button for quiz-->
-    <div id="startQuiz">
+
+   <div class="startQuiz">
         <button class="buttonStyle">Start Quiz</button>
     </div>
 
@@ -25,25 +26,25 @@
         <div class="ruleTitle">
             <span>How to play</span>
         </div>
-        <div id="quizRules">
+        <div class="quizRules">
             <div class="info"><span class="bullet">◎</span> You can only select ONE answer at a time</div>
             <div class="info"><span class="bullet">◎</span> No take-backsies, once selected, you've made your choice
             </div>
             <div class="info"><span class="bullet">◎</span> You will accumulate points for correct answers</div>
         </div>
         <div class="buttons">
-            <button class="exitQuiz">Exit Quiz</button>
-            <button class="newGame">New Game</button>
+            <button id="exitQuiz">Exit Quiz</button>
+            <button id="newGame">New Game</button>
         </div>
     </div>
 
     <!--Quiz box-->
-    <div class="quiz">
+    <div id="quiz">
         <header>
             <div class="title">Genshin Impact Quiz</div>
         </header>
         <section>
-            <div class="questionText">
+            <div id="questionText">
                 <span>First Question</span>
             </div>
             <div class="answerList">
@@ -63,13 +64,13 @@
             <div class="totalQuestions">
                 <p><span>1</span> of 12</p>
             </div>
-            <button class="nextButton">Next Question</button>
+            <button id="nextButton">Next Question</button>
         </footer>
     </div>
 
-    <!-- Results box -->        
+    <!-- Results box -->      
    
-    <div class="results">
+    <div id="results">
  <div class="icon">
       </div>
       <div class="congrats"><h3>Congratulations! You've completed the quiz!</h3></div>
@@ -79,9 +80,24 @@
     <div class="endButtons">
         <button class="newGame">New Game?</button>
         <button class="exitQuiz">Exit Quiz</button>
+        <button class="TESTER">TESTING</button>
   </div>
 </div>
 
+<script>
+
+//get all the elements first: 
+
+
+
+
+
+
+
+
+
+
+</script>
 
 <!--ADD AN OPTION FOR CONTACTING HERE USING EMAILJS INCASE OF LORE CHANGES. ADD THE BUTTON TO THE RESULTS PAGEW -->
     <script src="/assets/js/script.js"></script>
