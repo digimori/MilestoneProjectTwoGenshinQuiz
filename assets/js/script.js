@@ -10,19 +10,27 @@ const answerList = document.getElementById("answerList")
 
 
 function startGame() {
-  howToPlay.classList.add("showBox")
+  howToPlay.classList.add("showBox");
+  startButton.classList.add("hideStart");
 }
 
+function exitGame(){
+howToPlay.classList.remove("showBox");
+  startButton.classList.remove("hideStart");
+}
 
-
+function newGame() {
+howToPlay.classList.remove("showBox");
+quizBox.classList.add("activeQuiz");
+}
 
 function continueButton() {
   alert("BLAAAAAAAAHHH")
 }
 document.getElementById('startButton').addEventListener("click", startGame);
+document.getElementById("newGame").addEventListener("click", newGame)
 
 
-document.getElementById('newGame').addEventListener("click", continueButton)
 document.getElementById('newGamePlus').addEventListener("click", continueButton)
-document.getElementById('exitQuizStart').addEventListener("click", continueButton)
+document.getElementById('exitQuizStart').addEventListener("click", exitGame)
 document.getElementById('exitQuiz').addEventListener("click", continueButton)

@@ -15,13 +15,28 @@ body {
 
 /* ----------------------------------------- Styles for 'Start Quiz' button ----------------------------------------- */
 
+.startQuiz {
+    position: absolute;
+    top: 52%;
+    left: 60%;
+    width: 50%;
+}
+
 #startButton #info_box,
 #quiz,
 #results {
-  position: relative;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+}
+
+#startButton.hideStart {
+  opacity: 0;
+}
+
+#quiz.activeQuiz {
+    z-index: 6;
+  opacity: 1;
 }
 
 #startButton.showBox, 
@@ -33,7 +48,7 @@ body {
 }
 
 #startButton {
-  position:absolute;
+  position: absolute;
   cursor: pointer;
   margin: 0 auto;
   width: 25%;
@@ -41,11 +56,14 @@ body {
   font-size: 30px;
   color: #000;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 50px;
+border: none;
   padding: 12px 20px;
   height: 90px;
   opacity: 0.9;
 }
+
+
 
 /* ------------------------------------------ How to Play box ------------------------------------------*/
 
