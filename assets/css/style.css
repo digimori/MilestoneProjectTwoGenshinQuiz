@@ -15,19 +15,20 @@ body {
 
 /* ----------------------------------------- Styles for 'Start Quiz' button ----------------------------------------- */
 
-.startQuiz {
-    position: absolute;
-    top: 52%;
-    left: 60%;
-    width: 50%;
-}
-
 #startButton #info_box,
 #quiz,
 #results {
+  position: relative;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+}
+
+#startButton.showBox,
+#info_box.showBox,
+#results.showBox {
+  z-index: 6;
+  opacity: 1;
 }
 
 #startButton.hideStart {
@@ -35,14 +36,6 @@ body {
 }
 
 #quiz.activeQuiz {
-    z-index: 6;
-  opacity: 1;
-}
-
-#startButton.showBox, 
-#info_box.showBox,
-#quiz.showBox, 
-#results.showBox {
   z-index: 6;
   opacity: 1;
 }
@@ -51,19 +44,16 @@ body {
   position: absolute;
   cursor: pointer;
   margin: 0 auto;
-  width: 25%;
+  width: 100%;
   font-weight: 450;
   font-size: 30px;
   color: #000;
   background-color: #fff;
-  border-radius: 50px;
-border: none;
+  border-radius: 5px;
   padding: 12px 20px;
   height: 90px;
   opacity: 0.9;
 }
-
-
 
 /* ------------------------------------------ How to Play box ------------------------------------------*/
 
@@ -136,13 +126,12 @@ border: none;
   color: #000;
   box-shadow: 0px 1px 2px 1px;
   height: 450px;
-  pointer-events: none;
   transform: translate(-50%, -50%) scale(1);
-  display: none;
+  opacity: 0;
 
 }
 
-.questionText,
+#questionText,
 .answerList {
   color: #000;
   padding: 3px;
@@ -170,7 +159,7 @@ border: none;
 
 /* ------------------------------- Quiz box - Main Body ------------------------------------*/
 
-#quiz .questionText {
+#quiz #questionText {
   padding: 10px 0px 20px 0px;
   margin: 0 auto;
   font-size: 22px;
@@ -209,7 +198,7 @@ border: none;
   cursor: pointer;
 }
 
-.option :hover {
+.option:hover {
   background-color: #fff;
   border: 2px solid lightgray;
   color: #000;
