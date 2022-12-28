@@ -44,10 +44,22 @@ function showQuestions(i) {
     '<div class="option"><span>' + questions[i].answer[2] + '</span></div>';
   questionText.innerHTML = questionShow;
   answers.innerHTML = showOptions;
+  answers.innerHTML = showOptions;
   let option = answers.querySelectorAll(".option");
-  for (let i = 0; i < answers.length; i++) {
-  option[i].setAttribute("onclick", "WhateverFunctionIsGonnaBeHere(this)");
-  };
+  for (let i = 0; i < option.length; i++) {
+    option[i].setAttribute("onclick", "selectedAnswer(this)");
+  }
+}
+
+function selectedAnswer(rightAnswer) {
+let userResponse = rightAnswer.textContent;
+let correctAnswer = questions[questionCount - 1].rightAnswer;
+if(userResponse == correctAnswer) {
+console.log("correct")
+
+} else {
+console.log("incorrect");
+}
 }
 
 //-------------------------------x of 21 questions code-------------------------//
