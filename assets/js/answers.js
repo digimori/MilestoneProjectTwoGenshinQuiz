@@ -1,5 +1,5 @@
 
-const questions = [{
+export const questions = [{
   numero: 1,
   question: "Which region are the Knights of Favonius located?",
   answer: ["Khaenriah", "Mondstadt", "Inazuma"],

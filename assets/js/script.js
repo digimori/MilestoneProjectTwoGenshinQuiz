@@ -1,9 +1,9 @@
 $(document).ready(function(){
   console.log("Ready");
   })
-
-const answerFile = require('./answers.js');
   
+  const answerFile = import('./answers.js')
+
   // --------------------Getting all the elements needed from the HTML -----------//
   
   const startButton = document.getElementById("startButton");
@@ -39,7 +39,6 @@ const answerFile = require('./answers.js');
   
   function showQuestions(i) {
     let questionText = document.getElementById('questionText');
-  
     let questionShow = '<span>' + questions[i].numero + ". " + questions[i].question + '</span>';
     let showOptions = '<div class="option"><span>' + questions[i].answer[0] + '</span></div>' +
       '<div class="option"><span>' + questions[i].answer[1] + '</span></div>' +
@@ -84,7 +83,7 @@ const answerFile = require('./answers.js');
   //-------------------------------x of 21 questions code-------------------------
   function counter(i) {
     const quesCount = document.getElementById("totalQuestions");
-    let bottomQuestionCounter = '<span><p> ' + i + ' of ' + questions.length + '</p></span>';
+    let bottomQuestionCounter = '<span><p id="outOf"> ' + i + ' of ' + questions.length + '</p></span>';
     quesCount.innerHTML = bottomQuestionCounter;
   }
   
@@ -103,15 +102,24 @@ const answerFile = require('./answers.js');
       questionNum++;
       counter(questionNum);
     } else {
-      console.log("End of questions");
+      console.log("End of questions")
+      //showResults
     }
   }
+  
+  // ------------------------ Results box -------------------------------------- //
+  /*
+  function showResults() {
+  nextButton.innerHTML = "Show Results";
+  const results = document.getElementById("results");
+    quizBox.classList.remove("activeQuiz");
+    results.classList.add("showResults");
+  
+  }*/
   
   function incrementScore() {
   
   }
-  
-  
   
   //Tester button ---------------------------------------------------------
   
