@@ -52,15 +52,16 @@ function showQuestions(i) {
 }
 
 function selectedAnswer(rightAnswer) {
-let userResponse = rightAnswer.textContent;
-let correctAnswer = questions[questionCount - 1].rightAnswer;
-if(userResponse == correctAnswer) {
-console.log("correct")
-
-} else {
-console.log("incorrect");
-}
-}
+  let userResponse = rightAnswer.textContent;
+  let correctAnswer = questions[questionCount - 1].rightAnswer;
+  if(userResponse == correctAnswer) {
+  console.log("correct")
+  rightAnswer.classList.add("correct");
+  } else {
+  rightAnswer.classList.add("incorrect");
+  console.log("incorrect");
+  }
+  }
 
 //-------------------------------x of 21 questions code-------------------------//
 function counter(i) {

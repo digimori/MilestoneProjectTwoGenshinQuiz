@@ -205,7 +205,21 @@ body {
   cursor: pointer;
 }
 
-/*---------------------------Next Button-----------------------------*/
+/* -------------------------Correct/Incorrect answer buttons -------------------- */
+
+#answerList .option.correct {
+  color: #fff;
+  background-color: lightGreen;
+  border: 2px solid darkGreen;
+}
+
+#answerList .option.incorrect {
+  color: #fff;
+  background-color: red;
+  border: 2px solid darkRed;
+}
+
+/* ---------------------------Next Button----------------------------- */
 
 #nextButton {
   margin: 0 auto;
