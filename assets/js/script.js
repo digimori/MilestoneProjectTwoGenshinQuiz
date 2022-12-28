@@ -1,3 +1,7 @@
+$(document).ready(function(){
+  console.log("Ready");
+  })
+
 const answerFile = require('./answers.js');
 
 
