@@ -34,6 +34,7 @@ body {
 #startButton.hideStart {
   opacity: 0;
   pointer-events: none;
+  z-index: 0;
 }
 
 #quiz.activeQuiz {
@@ -42,14 +43,13 @@ body {
 }
 
 #results.showResults {
-   z-index: 6;
+   z-index: 30;
   opacity: 1;
 }
 
 #startQuiz {
-  position: relative;
-  margin: auto;
-  width: 60%;
+  margin: 0 auto;
+  width: 120px;
   height: 90px;
   z-index: 10;
 }
@@ -79,16 +79,18 @@ z-index: 20;}
   height: 350px;
   transform: translate(-50%, -50%) scale(1);
   opacity: 0;
-
+  margin-top: 300px;
 }
 
 .ruleTitle {
   text-align: center;
 height: 20px;
   color: #000;
-  padding-top: 15px;
+  padding-top: 20px;
+  padding-bottom: 30px; 
   font-weight: 700;
   font-size: 2em;
+  line-height: 20px;
 }
 
 .quizRules {
@@ -101,6 +103,7 @@ height: 20px;
 .quizRules .info {
   margin: 5px 0;
   font-size: 20px;
+  line-height: 22px;
 }
 
 .bullet {
@@ -110,7 +113,7 @@ height: 20px;
 
 .buttons {
   height: 80px;
-  padding: 0 30px;
+  padding: 0 30px 0 10px;
   display: flex;
   align-items: center;
   justify-content:center;
@@ -144,7 +147,7 @@ height: 20px;
   height: 450px;
   transform: translate(-50%, -50%) scale(1);
   opacity: 0;
-
+margin-top: -300px;
 }
 
 #questionText,
