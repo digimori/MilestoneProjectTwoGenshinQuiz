@@ -44,6 +44,10 @@ function showQuestions(i) {
     '<div class="option"><span>' + questions[i].answer[2] + '</span></div>';
   questionText.innerHTML = questionShow;
   answers.innerHTML = showOptions;
+  let option = answers.querySelectorAll(".option");
+  for (let i = 0; i < answers.length; i++) {
+  option[i].setAttribute("onclick", "WhateverFunctionIsGonnaBeHere(this)");
+  };
 }
 
 //-------------------------------x of 21 questions code-------------------------//
