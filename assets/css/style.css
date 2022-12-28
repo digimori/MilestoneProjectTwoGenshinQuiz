@@ -15,7 +15,7 @@ body {
 
 /* ----------------------------------------- Styles for 'Start Quiz' button ----------------------------------------- */
 
-#startButton #info_box,
+#startButton, #info_box,
 #quiz,
 #results {
   position: relative;
@@ -51,6 +51,7 @@ body {
   margin: auto;
   width: 60%;
   height: 90px;
+  z-index: 10;
 }
 
 #startButton {
@@ -65,18 +66,20 @@ body {
   background-color: #fff;
   border-radius: 5px;
   padding: 12px 20px;
-  height: 90px;}
+  height: 90px;
+z-index: 20;}
 
 /* ------------------------------------------ How to Play box ------------------------------------------*/
 
 #info_box {
   background-color: #fff;
-  width: 40%;
+  width: 30%;
   border-radius: 8px;
   border: 2px solid black;
   height: 350px;
   transform: translate(-50%, -50%) scale(1);
   opacity: 0;
+
 }
 
 .ruleTitle {
@@ -106,12 +109,12 @@ height: 20px;
 }
 
 .buttons {
-  height: 50px;
-  padding: 20px 30px;
+  height: 80px;
+  padding: 0 30px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  margin-top: 30px;
+  justify-content:center;
+  margin-top: 30px auto;
 }
 
 .buttons button {
