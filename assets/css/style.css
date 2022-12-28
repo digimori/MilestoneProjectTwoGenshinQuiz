@@ -219,6 +219,10 @@ body {
   border: 2px solid darkRed;
 }
 
+#answerList .option.disable {
+  pointer-events: none;
+}
+
 /* ---------------------------Next Button----------------------------- */
 
 #nextButton {
