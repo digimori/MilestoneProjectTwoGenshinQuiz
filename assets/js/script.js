@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const questions = [{
   numero: 1,
   question: "Which region are the Knights of Favonius located?",
@@ -128,18 +130,15 @@ const questions = [{
 
 $(document).ready(function() {
 console.log("Ready");
-})
+});
 
 
 // -------------------- Getting all the elements needed from the HTML ----------- //
 
 const startButton = document.getElementById("startButton");
 const howToPlay = document.getElementById("info_box");
-const exitQuiz = document.getElementById("exitQuizStart");
-const continue_btn = document.getElementById("newGame");
 const quizBox = document.getElementById("quiz");
 const results = document.getElementById("results");
-const leaveQuiz = document.getElementById("exitQuiz");
 const answers = document.getElementById("answerList");
 
 // ------------ All counters set to their start numbers ----------------- //
@@ -171,11 +170,10 @@ counter(1);
 
 function showQuestions(i) {
 let questionText = document.getElementById("questionText");
-questionText.innerHTML = '<span>' + questions[i].numero + '. ' + questions[i].question + '</span>';
-answers.innerHTML = "<div class='option'><span>" + questions[i].answer[0] + "</span></div>" +
-  "<div class='option'><span>" + questions[i].answer[1] + "</span></div>" +
-  "<div class='option'><span>" + questions[i].answer[2] + "</span></div>";
-  
+questionText.innerHTML = '<span>' + questions[i].numero + ". " + questions[i].question + '</span>';
+answers.innerHTML = '<div class="option"><span>' + questions[i].answer[0] + '</span></div>' +
+  '<div class="option"><span>' + questions[i].answer[1] + '</span></div>' +
+  '<div class="option"><span>' + questions[i].answer[2] + '</span></div>';
 let option = answers.querySelectorAll(".option");
 for(let i = 0; i < option.length; i++) {
   option[i].setAttribute("onclick", "selectedAnswer(this)");
@@ -191,14 +189,11 @@ let allSelections = answers.children.length;
 
 if (userResponse == correctAnswer) {
   userScore += 1;
-  console.log(userScore);
-  console.log("correct")
   rightAnswer.classList.add("correct");
 } else {
   rightAnswer.classList.add("incorrect");
-  console.log("incorrect");
   showAnswer();
-};
+}
 
 function showAnswer() {
   for (let i = 0; i < allSelections; i++) {
@@ -208,7 +203,7 @@ function showAnswer() {
   }
 }
 $(".option").addClass("disable");
-};
+}
 
 
 // -------------------------------x of 21 questions code------------------------- //
@@ -217,12 +212,11 @@ function counter(i) {
 const quesCount = document.getElementById("totalQuestions");
 let bottomQuestionCounter = "<span><p> " + i + " of " + questions.length + "</p></span>";
 quesCount.innerHTML = bottomQuestionCounter;
-};
+}
 
 
 // -------------------Button and function for next question--------------------- //
 
-const nextButton = document.getElementById("nextButton");
 document.getElementById("nextButton").onclick = function() {
 nextQuestion();
 };
@@ -234,10 +228,10 @@ if (questionCount <= questions.length - 1) {
   questionNum++;
   counter(questionNum);
 } else {
-  console.log("End of questions")
+  console.log("End of questions");
   showResults();
 }
-};
+}
 
 // ------------------------ Results box -------------------------------------- //
 

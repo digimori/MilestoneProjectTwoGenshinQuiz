@@ -8,9 +8,30 @@
 }
 
 body {
-  background-image: url('assets/images/backgroundforquiz.png');
+  background-image: url('/assets/images/backgroundforquiz.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+#logo {
+  background-image: url('/assets/images/[CITYPNG.COM]HD\ Official\ Genshin\ Impact\ Game\ Logo\ PNG\ -\ 1320x629.png');
+  position: relative;
+  margin: 0 auto;
+  top: 25px;
+  z-index: 459;
+  height: 300px;
+  width: 550px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#logotext h1{
+  color:#fff;
+  width: 120px;
+  margin: -40px auto;
+  font-size: 30px;
+ font-weight: 700;
+ height: 32px;
 }
 
 /* ----------------------------------------- Styles for 'Start Quiz' button ----------------------------------------- */
@@ -61,8 +82,9 @@ body {
   width: 40%;
   font-weight: 450;
   font-size: 30px;
-  color: #000;
-  background-color: #fff;
+  color: #3F292C;
+  background-color: #fefff6;
+  border: 2px solid #3F292C;
   border-radius: 5px;
   padding: 12px 20px;
   height: 90px;
@@ -71,20 +93,21 @@ z-index: 20;}
 /* ------------------------------------------ How to Play box ------------------------------------------*/
 
 #info_box {
-  background-color: #fff;
+  background-color: #fefff6;
   width: 30%;
   border-radius: 8px;
-  border: 2px solid black;
+  border: 2px solid #3F292C;
   height: 350px;
   transform: translate(-50%, -50%) scale(1);
   opacity: 0;
-  margin-top: 300px;
+  margin-top: 200px;
 }
+
 
 .ruleTitle {
   text-align: center;
 height: 20px;
-  color: #000;
+  color: #3F292C;
   padding-top: 20px;
   padding-bottom: 30px; 
   font-weight: 700;
@@ -100,7 +123,7 @@ height: 20px;
 }
 
 .quizRules .info {
-  margin: 5px 0;
+  margin: 15px 0;
   font-size: 20px;
   line-height: 22px;
 }
@@ -124,24 +147,24 @@ height: 20px;
   font-size: 20px;
   font-weight: 700;
   padding: 10px 20px;
-  background-color: #695E93;
-  color: #fff;
+  background-color: #3F292C;
+  color: #f5e1d5;
   border-radius: 5px;
-  border: 2px solid #000;
+  border: 2px solid #f5e1d5;
 }
 
 .buttons button:hover {
-  color: #695E93;
-  background-color: #fff;
+  color: #3F292C;
+  background-color: #f5e1d5;
 }
 
 /*----------------------------Quiz Box----------------------------*/
 
 #quiz {
   width: 600px;
-  background-color: #fdfff2;
+  background-color: #fefff6;
   border-radius: 8px;
-  color: #000;
+  color: #3F292C;
   box-shadow: 0px 1px 2px 1px;
   height: 450px;
   transform: translate(-50%, -50%) scale(1);
@@ -151,15 +174,15 @@ margin-top: -300px;
 
 #questionText,
 .answerList {
-  color: #000;
+  color: #3F292C;
   padding: 3px;
-  background-color: #fdfff2;
+  background-color: #fefff6;
 }
 
 #quiz header {
   height: 80px;
   padding: 10px 30px;
-  background-color: #fdfff2;
+  background-color: #fefff6;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -173,7 +196,7 @@ margin-top: -300px;
 #quiz header .title {
   font-size: 25px;
   font-weight: 700;
-  color: #000;
+  color: #3F292C;
 }
 
 /* ------------------------------- Quiz box - Main Body ------------------------------------*/
@@ -189,7 +212,7 @@ margin-top: -300px;
 #totalQuestions {
   font-size: 17px;
   font-weight: 600;
-  color: #000;
+  color: #3F292C;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 15px;
@@ -197,7 +220,7 @@ margin-top: -300px;
 
 #quiz section {
   padding: 20px 30px 10px 30px;
-  background-color: #fdfff2;
+  background-color: #fefff6;
 }
 
 #quiz .answerList {
@@ -205,37 +228,38 @@ margin-top: -300px;
   margin: 0 auto;
   padding: 5px 15px;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .option {
-  background: lightgray;
-  border: 2px solid darkgray;
+  background: #f5e1d5;
+  border: 2px solid #B77852;
   border-radius: 5px;
   padding: 5px;
   margin: 5px 0;
   cursor: pointer;
+  font-weight: 700;
 }
 
 .option:hover {
-  background-color: #fff;
-  border: 2px solid lightgray;
-  color: #000;
+  background-color: #B77852;
+  border: 2px solid #f5e1d5;
+  color: #3F292C;
   cursor: pointer;
 }
 
 /* -------------------------Correct/Incorrect answer buttons -------------------- */
 
 #answerList .option.correct {
-  color: #fff;
-  background-color: lightGreen;
-  border: 2px solid darkGreen;
+  color: #000;
+  background-color: rgb(194, 248, 194);
+  border: 2px solid rgb(4, 66, 4);
 }
 
 #answerList .option.incorrect {
-  color: #fff;
-  background-color: red;
-  border: 2px solid darkRed;
+  color: #000;
+  background-color: rgb(240, 126, 126);
+  border: 2px solid rgb(92, 12, 12);
 }
 
 #answerList .option.disable {
@@ -253,9 +277,10 @@ footer {
   width: 30%;
   font-weight: 450;
   font-size: 20px;
-  color: #000;
-  background-color: #fff;
+  color: #3F292C;
+  background-color: #f5e1d5;
   border-radius: 5px;
+  border: 2px solid #3F292C;
   padding: 10px;
   height: 60px;
   display: flex;
@@ -264,20 +289,22 @@ footer {
 }
 
 #nextButton:hover {
-  color: #fff;
-  background-color: #000;
+  color: #f5e1d5;
+  background-color: #3F292C;
 }
 
 /*-------------------- Quiz Results section -------------------- */
 
 #results {
-  background-color: #fff;
+  background-color: #fefff6;
   width: 600px;
   padding: 25px;
+  margin-top: 30px;
   border-radius: 8px;
   text-align: center;
   opacity: 0;
   position: absolute;
+  border: 2px solid #3F292C
 }
 
 #results h3 {
@@ -287,7 +314,7 @@ footer {
 
 #score {
   margin: 0 auto;
-  background: #fff;
+  background: #fefff6;
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -308,10 +335,11 @@ footer {
 
 .icon {
   margin: 12px auto;
-  background-image: url('assets/images/Hilichurl_3.png');
+  background-image: url('/assets/images/Hilichurl_3.png');
   background-size: cover;
   height: 200px;
   width: 200px;
+  border: 1px solid #3F292C;
 }
 
 /*------------------------------------ Quiz result buttons ------------------------------------ */
@@ -323,15 +351,94 @@ footer {
   font-size: 20px;
   font-weight: 700;
   padding: 10px 20px;
-  background-color: #695E93;
-  color: #fff;
+  background-color: #f5e1d5;
+  color: #3F292C;
   border-radius: 5px;
-  border: 2px solid #000;
+  border: 2px solid #3F292C;
 }
 
 #newGame:hover,
 #exitQuiz:hover,
 #exitQuizStart:hover {
-  color: #695E93;
-  background-color: #fff;
+  cursor: pointer;
+  color: #f5e1d5;
+  background-color: #3F292C;
+  border: 2 px solid #f5e1d5;
 }
+
+
+
+/* -------- Media Queries ----------- 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV*/
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  #startQuiz {
+    top: 50%;
+    cursor: pointer;
+    width: 40%;
+    font-weight: 450;
+    font-size: 30px;
+    color: #000;
+    border-radius: 5px;
+    padding: 12px 20px;
+    height: 90px;
+    z-index: 20;
+    margin: 0 auto;
+};
+
+#logo {
+  background-image: url('/assets/images/[CITYPNG.COM]HD\ Official\ Genshin\ Impact\ Game\ Logo\ PNG\ -\ 1320x629.png');
+  position: relative;
+  margin: 0 auto;
+  top: 10px;
+  z-index: 459;
+  height: 200px;
+  width: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#info_box {
+  background-color: #fefff6;
+  width: 80%;
+  border-radius: 8px;
+  border: 2px solid #3F292C;
+  height: 400px;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  margin-top: 200px;
+}
+#quiz {
+width: 400px;
+background-color: #fefff6;
+border-radius: 8px;
+color: #3F292C;
+box-shadow: 0px 1px 2px 1px;
+height: 400px;
+transform: translate(-50%, -50%) scale(1);
+opacity: 0;
+margin-top: -430px;
+}
+
+footer {
+margin: 0 auto;
+}
+#nextButton {
+  width: 160px;
+  height: 40px;
+  font-size: 18px;
+}
+#quiz #questionText {
+  font-size: 18px;
+}
+
+#results {
+  margin-top: 150px;
+  width: 450px;
+}
+
+  };
