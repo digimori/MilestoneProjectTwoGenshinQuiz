@@ -268,9 +268,9 @@ function exitGameEnd() {
 window.location.reload();
 }
 
-function newGamePlus() { 
+function newGamePlus() {  
+  quizBox.classList.add("activeQuiz"); 
   results.classList.remove("showResults");
-newGame();
   let questionCount = 1;
   let questionNum = 1;
   let userScore = 0; 
