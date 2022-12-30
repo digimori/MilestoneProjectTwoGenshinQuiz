@@ -138,8 +138,11 @@ const howToPlay = document.getElementById("info_box");
 const exitQuiz = document.getElementById("exitQuizStart");
 const continue_btn = document.getElementById("newGame");
 const quizBox = document.getElementById("quiz");
+const results = document.getElementById("results");
+const newGamePlus =  document.getElementById("newGamePlus");
+const leaveQuiz = document.getElementById("exitQuiz");
+const answers = document.getElementById('answerList');
 
-let answers = document.getElementById('answerList')
 //------------ Start the game functions ----------------------------------//
 
 function startGame() {
@@ -178,6 +181,8 @@ for (let i = 0; i < option.length; i++) {
 }
 }
 
+// --------------------- Answer Selection --------------------- //
+
 function selectedAnswer(rightAnswer) {
 let userResponse = rightAnswer.textContent;
 let correctAnswer = questions[questionCount - 1].rightAnswer;
@@ -207,7 +212,8 @@ answers.children[i].setAttribute("class", "option correct");
 }
 
 
-//-------------------------------x of 21 questions code-------------------------
+//-------------------------------x of 21 questions code------------------------- //
+
 function counter(i) {
 const quesCount = document.getElementById("totalQuestions");
 let bottomQuestionCounter = '<span><p> ' + i + ' of ' + questions.length + '</p></span>';
@@ -235,9 +241,6 @@ if (questionCount <= questions.length - 1) {
 }
 
 // ------------------------ Results box -------------------------------------- //
-const results = document.getElementById("results");
-const newGamePlus =  document.getElementById("newGamePlus");
-const leaveQuiz = document.getElementById("exitQuiz");
 
 function showResults() {
   howToPlay.classList.remove("showBox");
@@ -246,11 +249,12 @@ results.classList.add("showResults");
 
 }
 
+//maybe switch this to showScore?
 function incrementScore() {
 
 }
 
-//Tester button ---------------------------------------------------------
+// -------------------------------------- Tester button ---------------------------------------------------------
 
 function continueButton() {
 alert("BLAAAAAAAAHHH")
@@ -260,6 +264,6 @@ alert("BLAAAAAAAAHHH")
 
 document.getElementById('startButton').addEventListener("click", startGame);
 document.getElementById("newGame").addEventListener("click", newGame)
-document.getElementById('newGamePlus').addEventListener("click", continueButton)
+document.getElementById('newGamePlus').addEventListener("click", newGame)
 document.getElementById('exitQuizStart').addEventListener("click", exitGame)
-document.getElementById('exitQuiz').addEventListener("click", continueButton)
+document.getElementById('exitQuiz').addEventListener("click", exitGame)

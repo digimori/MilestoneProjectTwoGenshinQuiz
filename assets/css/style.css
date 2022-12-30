@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url('/assets/images/backgroundforquiz.png');
+  background-image: url('assets/images/backgroundforquiz.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -307,7 +307,7 @@ footer {
 
 .icon {
   margin: 12px auto;
-  background-image: url('/assets/images/Hilichurl_3.png');
+  background-image: url('assets/images/Hilichurl_3.png');
   background-size: cover;
   height: 200px;
   width: 200px;
