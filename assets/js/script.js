@@ -268,18 +268,6 @@ function exitGameEnd() {
 window.location.reload();
 }
 
-/*function newGamePlus() {  
-  quizBox.classList.add("activeQuiz"); 
-  results.classList.remove("showResults");
-  let questionCount = 1;
-  let questionNum = 1;
-  let userScore = 0; 
-  showQuestions(questionCount);
-  questionCount++;
-  questionNum++;
-  counter(questionNum);
-}*/
-
 // -------------------------------------- Tester button ---------------------------------------------------------
 
 function continueButton() {
@@ -290,6 +278,5 @@ alert("BLAAAAAAAAHHH")
 
 document.getElementById('startButton').addEventListener("click", startGame);
 document.getElementById("newGame").addEventListener("click", newGame)
-document.getElementById('newGamePlus').addEventListener("click", newGamePlus)
 document.getElementById('exitQuizStart').addEventListener("click", exitGame)
 document.getElementById('exitQuiz').addEventListener("click", exitGameEnd)
