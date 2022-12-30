@@ -138,7 +138,7 @@ const howToPlay = document.getElementById("info_box");
 const exitQuiz = document.getElementById("exitQuizStart");
 const continue_btn = document.getElementById("newGame");
 const quizBox = document.getElementById("quiz");
-const results = document.getElementById("results");
+
 let answers = document.getElementById('answerList')
 //------------ Start the game functions ----------------------------------//
 
@@ -230,19 +230,21 @@ if (questionCount <= questions.length - 1) {
   counter(questionNum);
 } else {
   console.log("End of questions")
-  //showResults
+  showResults();
 }
 }
 
 // ------------------------ Results box -------------------------------------- //
-/*
-function showResults() {
-nextButton.innerHTML = "Show Results";
 const results = document.getElementById("results");
-quizBox.classList.remove("activeQuiz");
+const newGamePlus =  document.getElementById("newGamePlus");
+const leaveQuiz = document.getElementById("exitQuiz");
+
+function showResults() {
+  howToPlay.classList.remove("showBox");
+  quizBox.classList.remove("activeQuiz");
 results.classList.add("showResults");
 
-}*/
+}
 
 function incrementScore() {
 
