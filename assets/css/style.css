@@ -375,6 +375,149 @@ footer {
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV*/
 
+
+
+
+@media screen and (min-width: 320px) and (max-width: 478px) {
+  #startButton {
+    top: 60%;
+    width: 70%;
+    position: absolute;
+}
+  }
+#startQuiz {
+  margin: 0 auto;
+  width: 120px;
+  height: 60px;
+  }
+  #logoText {
+    margin: 0 auto;
+    padding-left: 80px;
+  }
+
+  #logo {
+    margin: 0 35px;
+    top: 1px;
+    z-index: 459;
+    height: 180px;
+    width: 280px;
+}
+
+#info_box {
+  width: 95%;
+  margin-top: 180px;
+}
+.quizRules .info {
+  margin: 10px 0;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.quizRules {
+  width: 80%;
+  padding: 10px 10px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.ruleTitle {
+  height: 15px;
+}
+
+#quiz {
+  width: 300px;
+  background-color: #fefff6;
+  border-radius: 8px;
+  color: #3F292C;
+  box-shadow: 0px 1px 2px 1px;
+  height: 400px;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  margin-top: -345px;
+}
+
+#quiz header .title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3F292C;
+  padding-left: 30px;
+}
+
+#quiz #questionText {
+  padding: 10px 0px 12px 0px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.option {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+#totalQuestions {
+  font-size: 12px;
+  margin: -20px auto;
+  text-align: center;
+  padding-bottom: 5px;
+}
+#nextButton {
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 12px;
+  height: 40px;
+  margin: 25px auto;
+  width: 40%;
+
+}
+
+#exitQuizStart,
+#newGame {
+margin: 0 12px;
+font-size: 15px;
+font-weight: 700;
+padding: 0 10px;
+background-color: #f5e1d5;
+color: #3F292C;
+border-radius: 5px;
+height: 50px;
+border: 2px solid #3F292C;
+}
+
+#results {
+  width: 310px;
+  padding: 25px;
+  margin-top: 130px;
+}
+
+.icon {
+  margin: 7px auto;
+  height: 120px;
+  width: 120px;
+}
+
+#results h3 {
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+#score {
+  padding: 0;;
+}
+
+#score span {
+  margin: 8px 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+
+/* -----------------------  -----------------------  MEDIA QUERY 480PX - 768PX ----------------------- -------------------------------*/
+
+
+
 @media screen and (min-width: 480px) and (max-width: 768px) {
   #startQuiz {
     top: 50%;
@@ -441,4 +584,4 @@ margin: 0 auto;
   width: 450px;
 }
 
-  };
+  }
