@@ -126,12 +126,14 @@ const questions = [{
 },
 ];
 
-$(document).ready(function(){
+$(document).ready(function() {
 console.log("Ready");
 })
 
 
-// --------------------Getting all the elements needed from the HTML -----------//
+/*jshint esversion: 6 */
+
+// -------------------- Getting all the elements needed from the HTML ----------- //
 
 const startButton = document.getElementById("startButton");
 const howToPlay = document.getElementById("info_box");
@@ -139,11 +141,16 @@ const exitQuiz = document.getElementById("exitQuizStart");
 const continue_btn = document.getElementById("newGame");
 const quizBox = document.getElementById("quiz");
 const results = document.getElementById("results");
-const newGamePlus =  document.getElementById("newGamePlus");
 const leaveQuiz = document.getElementById("exitQuiz");
-const answers = document.getElementById('answerList');
+const answers = document.getElementById("answerList");
 
-//------------ Start the game functions ----------------------------------//
+// ------------ All counters set to their start numbers ----------------- //
+
+let questionCount = 1;
+let questionNum = 1;
+let userScore = 0;
+
+// ------------ Start the game functions ---------------------------------- //
 
 function startGame() {
 howToPlay.classList.add("showBox");
@@ -162,22 +169,18 @@ showQuestions(0);
 counter(1);
 }
 
-let questionCount = 1; //Needs to be 1 as 0 causes the answer to require two clicks.
-let questionNum = 1;
-let userScore = 0; 
-
-//----------------------Show questions function----------
+// ---------------------- Show questions function ---------- //
 
 function showQuestions(i) {
-let questionText = document.getElementById('questionText');
-let questionShow = '<span>' + questions[i].numero + ". " + questions[i].question + '</span>';
-let showOptions = '<div class="option"><span>' + questions[i].answer[0] + '</span></div>' +
-  '<div class="option"><span>' + questions[i].answer[1] + '</span></div>' +
-  '<div class="option"><span>' + questions[i].answer[2] + '</span></div>';
-questionText.innerHTML = questionShow;
-answers.innerHTML = showOptions;
+let questionText = document.getElementById("questionText");
+questionText.innerHTML = '<span>' + questions[i].numero + '. ' + questions[i].question + '</span>';
+answers.innerHTML = "<div class='option'><span>" + questions[i].answer[0] + "</span></div>" +
+  "<div class='option'><span>" + questions[i].answer[1] + "</span></div>" +
+  "<div class='option'><span>" + questions[i].answer[2] + "</span></div>";
+
 let option = answers.querySelectorAll(".option");
-for (let i = 0; i < option.length; i++) {
+
+for(let i = 0; i < option.length; i++) {
   option[i].setAttribute("onclick", "selectedAnswer(this)");
 }
 }
@@ -192,54 +195,48 @@ let allSelections = answers.children.length;
 if (userResponse == correctAnswer) {
   userScore += 1;
   console.log(userScore);
-  console.log("correct")
+  console.log("correct");
   rightAnswer.classList.add("correct");
 } else {
   rightAnswer.classList.add("incorrect");
   console.log("incorrect");
-showAnswer();
+  showAnswer();
 }
 
 function showAnswer() {
-for (let i = 0; i < allSelections; i++) {
-if(answers.children[i].textContent == correctAnswer) {
-answers.children[i].setAttribute("class", "option correct");
+  for (let i = 0; i < allSelections; i++) {
+    if (answers.children[i].textContent == correctAnswer) {
+      answers.children[i].setAttribute("class", "option correct");
+    }
+  }
 }
-}
-}
-  //showAnswer button to appear to show the answer and some text??
-  // if(!$(this).is(':checked')) {
-  //  $(this).prop('disabled', true);
-// ------ need to disable the options once one is selected----//
-//if answer is selected > disable others
 $(".option").addClass("disable");
 }
 
 
-//-------------------------------x of 21 questions code------------------------- //
+// -------------------------------x of 21 questions code------------------------- //
 
 function counter(i) {
 const quesCount = document.getElementById("totalQuestions");
-let bottomQuestionCounter = '<span><p> ' + i + ' of ' + questions.length + '</p></span>';
-quesCount.innerHTML = bottomQuestionCounter;
+quesCount.innerHTML = "<span><p> " + i + " of " + questions.length + "</p></span>";
 }
 
 
-// -------------------Button and function for next question---------------------
+// -------------------Button and function for next question--------------------- //
 
-const nextButton = document.getElementById('nextButton');
+const nextButton = document.getElementById("nextButton");
 document.getElementById("nextButton").onclick = function() {
-nextQuestion()
+nextQuestion();
 };
 
 function nextQuestion() {
-if (questionCount <= questions.length - 1) {
+if (questionCount <= questions.length -1) {
   showQuestions(questionCount);
   questionCount++;
   questionNum++;
   counter(questionNum);
 } else {
-  console.log("End of questions")
+  console.log("End of questions");
   showResults();
 }
 }
@@ -247,36 +244,8 @@ if (questionCount <= questions.length - 1) {
 // ------------------------ Results box -------------------------------------- //
 
 function showResults() {
-  howToPlay.classList.remove("showBox");
-  quizBox.classList.remove("activeQuiz");
+howToPlay.classList.remove("showBox");
+quizBox.classList.remove("activeQuiz");
 results.classList.add("showResults");
 incrementScore();
 }
-
-//maybe switch this to showScore?
-function incrementScore() {
-let scoreCounter = document.getElementById('score');
-if(userScore >= 0) {
-  let displayScore = '<span>You scored <p>' + userScore + '</p> out of <p>21</p></span>';
-  scoreCounter.innerHTML = displayScore;
-}
-}
-
-//ExitGameEnd function and newGamePlus
-
-function exitGameEnd() {
-window.location.reload();
-}
-
-// -------------------------------------- Tester button ---------------------------------------------------------
-
-function continueButton() {
-alert("BLAAAAAAAAHHH")
-}
-
-//------------------- Event Listeners -----------------------//
-
-document.getElementById('startButton').addEventListener("click", startGame);
-document.getElementById("newGame").addEventListener("click", newGame)
-document.getElementById('exitQuizStart').addEventListener("click", exitGame)
-document.getElementById('exitQuiz').addEventListener("click", exitGameEnd)
