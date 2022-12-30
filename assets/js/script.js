@@ -268,7 +268,7 @@ function exitGameEnd() {
 window.location.reload();
 }
 
-function newGamePlus() {  
+/*function newGamePlus() {  
   quizBox.classList.add("activeQuiz"); 
   results.classList.remove("showResults");
   let questionCount = 1;
@@ -278,7 +278,7 @@ function newGamePlus() {
   questionCount++;
   questionNum++;
   counter(questionNum);
-}
+}*/
 
 // -------------------------------------- Tester button ---------------------------------------------------------
 
