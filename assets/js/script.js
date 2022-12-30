@@ -164,6 +164,7 @@ counter(1);
 
 let questionCount = 1; //Needs to be 1 as 0 causes the answer to require two clicks.
 let questionNum = 1;
+let userScore = 0; 
 
 //----------------------Show questions function----------
 
@@ -187,7 +188,10 @@ function selectedAnswer(rightAnswer) {
 let userResponse = rightAnswer.textContent;
 let correctAnswer = questions[questionCount - 1].rightAnswer;
 let allSelections = answers.children.length;
+
 if (userResponse == correctAnswer) {
+  userScore += 1;
+  console.log(userScore);
   console.log("correct")
   rightAnswer.classList.add("correct");
 } else {
@@ -246,13 +250,18 @@ function showResults() {
   howToPlay.classList.remove("showBox");
   quizBox.classList.remove("activeQuiz");
 results.classList.add("showResults");
-
+incrementScore();
 }
 
 //maybe switch this to showScore?
 function incrementScore() {
-
+let scoreCounter = document.getElementById('score');
+if(userScore >= 0) {
+  let displayScore = '<span>You scored <p>' + userScore + '</p> out of <p>21</p></span>';
+  scoreCounter.innerHTML = displayScore;
 }
+}
+
 
 // -------------------------------------- Tester button ---------------------------------------------------------
 

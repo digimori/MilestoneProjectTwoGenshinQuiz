@@ -285,7 +285,7 @@ footer {
   font-size: 22px;
 }
 
-.score {
+#score {
   margin: 0 auto;
   background: #fff;
   border-radius: 3px;
@@ -294,13 +294,13 @@ footer {
   justify-content: center;
 }
 
-.score span {
+#score span {
   display: flex;
   margin: 8px 0;
   font-size: 15px;
 }
 
-.score span p {
+#score span p {
   font-weight: 700;
   padding: 0 5px;
 }
