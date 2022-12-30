@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url('../images/backgroundforquiz.png');
+  background-image: url('assets/images/backgroundforquiz.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -292,6 +292,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 #score span {
@@ -307,7 +308,7 @@ footer {
 
 .icon {
   margin: 12px auto;
-  background-image: url('../images/Hilichurl_3.png');
+  background-image: url('assets/images/Hilichurl_3.png');
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -316,7 +317,6 @@ footer {
 /*------------------------------------ Quiz result buttons ------------------------------------ */
 
 #newGame,
-#newGamePlus,
 #exitQuizStart,
 #exitQuiz {
   margin: 0 12px;
@@ -331,8 +331,7 @@ footer {
 
 #newGame:hover,
 #exitQuiz:hover,
-#exitQuizStart:hover,
-#newGamePlus:hover {
+#exitQuizStart:hover {
   color: #695E93;
   background-color: #fff;
 }

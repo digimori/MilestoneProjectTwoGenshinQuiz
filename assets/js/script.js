@@ -212,7 +212,7 @@ answers.children[i].setAttribute("class", "option correct");
   //  $(this).prop('disabled', true);
 // ------ need to disable the options once one is selected----//
 //if answer is selected > disable others
-
+$(".option").addClass("disable");
 }
 
 
