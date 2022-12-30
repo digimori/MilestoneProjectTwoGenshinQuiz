@@ -262,6 +262,23 @@ if(userScore >= 0) {
 }
 }
 
+//ExitGameEnd function and newGamePlus
+
+function exitGameEnd() {
+window.location.reload();
+}
+
+function newGamePlus() { 
+  results.classList.remove("showResults");
+newGame();
+  let questionCount = 1;
+  let questionNum = 1;
+  let userScore = 0; 
+  showQuestions(questionCount);
+  questionCount++;
+  questionNum++;
+  counter(questionNum);
+}
 
 // -------------------------------------- Tester button ---------------------------------------------------------
 
@@ -273,6 +290,6 @@ alert("BLAAAAAAAAHHH")
 
 document.getElementById('startButton').addEventListener("click", startGame);
 document.getElementById("newGame").addEventListener("click", newGame)
-document.getElementById('newGamePlus').addEventListener("click", newGame)
+document.getElementById('newGamePlus').addEventListener("click", newGamePlus)
 document.getElementById('exitQuizStart').addEventListener("click", exitGame)
-document.getElementById('exitQuiz').addEventListener("click", exitGame)
+document.getElementById('exitQuiz').addEventListener("click", exitGameEnd)
