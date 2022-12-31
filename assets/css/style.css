@@ -367,9 +367,7 @@ footer {
   border: 2px solid #f5e1d5;
 }
 
-/* ------------------------------------------------------------------- Media Queries -------------------------------------------------------- */
-
-/*769px — 1024px: Small screens, laptops*/
+/* ------------------------------------------------------------------- Media Queries -------------------------------------------------------- */ 
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   #startButton {
@@ -380,22 +378,28 @@ footer {
   #startQuiz {
     margin: 0 auto;
     width: 120px;
-    height: 60px;
+    height: 40px;
   }
   #logoText {
     margin: 0 auto;
     padding-left: 80px;
   }
   #logo {
-    margin: 0 35px;
+    margin: 0 auto;
     top: 1px;
     z-index: 459;
-    height: 180px;
+    height: 160px;
     width: 280px;
   }
   #info_box {
     width: 95%;
-    margin-top: 180px;
+    margin-top: 150px;
+    height: 300px;
+  }
+  .buttons {
+    height: 80px;
+    display: flex;
+    justify-content: center;
   }
   .quizRules .info {
     margin: 10px 0;
@@ -414,15 +418,11 @@ footer {
   }
   #quiz {
     width: 300px;
-    background-color: #fefff6;
-    border-radius: 8px;
-    color: #3F292C;
     box-shadow: 0px 1px 2px 1px;
     height: 400px;
-    transform: translate(-50%, -50%) scale(1);
     opacity: 0;
-    margin-top: -345px;
-  }
+    margin-top: -250px;
+}
   #quiz header .title {
     font-size: 18px;
     font-weight: 700;
@@ -508,6 +508,14 @@ footer {
     z-index: 20;
     margin: 0 auto;
   }
+  #logotext h1 {
+    color: #fff;
+    width: 120px;
+    margin: 0px auto;
+    font-size: 30px;
+    font-weight: 700;
+    height: 32px;
+  }
   #logo {
     background-image: url('/assets/images/[CITYPNG.COM]HD\ Official\ Genshin\ Impact\ Game\ Logo\ PNG\ -\ 1320x629.png');
     position: relative;
@@ -535,10 +543,10 @@ footer {
     border-radius: 8px;
     color: #3F292C;
     box-shadow: 0px 1px 2px 1px;
-    height: 400px;
+    height: 450px;
     transform: translate(-50%, -50%) scale(1);
     opacity: 0;
-    margin-top: -430px;
+    margin-top: -400px;
   }
   footer {
     margin: 0 auto;
@@ -552,9 +560,16 @@ footer {
     font-size: 18px;
   }
   #results {
-    margin-top: 150px;
+    margin-top: 80px;
     width: 450px;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {}
+/* -----------------------  -----------------------  MEDIA QUERY 769PX - 1024PX ----------------------- -------------------------------*/
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+#info_box {
+  width: 80%;
+}
+
+}
