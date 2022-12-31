@@ -139,7 +139,7 @@ height: 20px;
   display: flex;
   align-items: center;
   justify-content:center;
-  margin-top: 30px auto;
+  margin-top: 30px;
 }
 
 .buttons button {
@@ -218,7 +218,7 @@ margin-top: -300px;
   padding-bottom: 15px;
 }
 
-#quiz section {
+#quiz #questionBox {
   padding: 20px 30px 10px 30px;
   background-color: #fefff6;
 }
@@ -363,7 +363,7 @@ footer {
   cursor: pointer;
   color: #f5e1d5;
   background-color: #3F292C;
-  border: 2 px solid #f5e1d5;
+  border: 2px solid #f5e1d5;
 }
 
 
@@ -507,7 +507,7 @@ border: 2px solid #3F292C;
   letter-spacing: 1px;
   font-weight: 700;
 }
-};
+}
 
 
 /* -----------------------  -----------------------  MEDIA QUERY 480PX - 768PX ----------------------- -------------------------------*/
@@ -579,7 +579,7 @@ margin: 0 auto;
   margin-top: 150px;
   width: 450px;
 }
-};
+}
 
   @media screen and (min-width: 769px) and (max-width: 1024px) {
     
