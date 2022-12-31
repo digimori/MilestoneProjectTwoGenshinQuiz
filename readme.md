@@ -1,6 +1,7 @@
 THINGS TO FIX BEFORE SUBMISSION: 
 MEDIA QUERIES
 GENSHIN LOGO AT THE TOP W/ "THE QUIZ" UNDER IT
+(the Quiz is in a h1 tag, it's causing problems. fix it.)
 
 
 #Genshin Impact Quiz: 

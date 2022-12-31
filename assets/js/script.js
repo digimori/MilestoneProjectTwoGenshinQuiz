@@ -175,7 +175,7 @@ answers.innerHTML = '<div class="option"><span>' + questions[i].answer[0] + '</s
   '<div class="option"><span>' + questions[i].answer[1] + '</span></div>' +
   '<div class="option"><span>' + questions[i].answer[2] + '</span></div>';
 let option = answers.querySelectorAll(".option");
-for(let i = 0; i < option.length; i++) {
+for (let i = 0; i < option.length; i++) {
   option[i].setAttribute("onclick", "selectedAnswer(this)");
 }
 }
@@ -205,7 +205,6 @@ function showAnswer() {
 $(".option").addClass("disable");
 }
 
-
 // -------------------------------x of 21 questions code------------------------- //
 
 function counter(i) {
@@ -213,7 +212,6 @@ const quesCount = document.getElementById("totalQuestions");
 let bottomQuestionCounter = "<span><p> " + i + " of " + questions.length + "</p></span>";
 quesCount.innerHTML = bottomQuestionCounter;
 }
-
 
 // -------------------Button and function for next question--------------------- //
 
