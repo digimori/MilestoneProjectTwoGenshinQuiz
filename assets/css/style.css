@@ -400,7 +400,7 @@ footer {
     height: 80px;
     display: flex;
     padding: 0;
-    margin: 0;
+    margin-top: -20px;
     justify-content: center;
   }
   .quizRules .info {
@@ -425,6 +425,9 @@ footer {
     opacity: 0;
     margin-top: -280px;
 }
+#quiz header {
+  height: 50px;
+}
   #quiz header .title {
     font-size: 18px;
     font-weight: 700;
@@ -432,11 +435,11 @@ footer {
     padding-left: 30px;
   }
   #quiz #questionText {
-    padding: 10px 0px 12px 0px;
+    padding: 5px 0px 5px 0px;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 600;
-    line-height: 16px;
+    line-height: 13px;
   }
   .option {
     font-size: 12px;
@@ -471,7 +474,7 @@ footer {
   #results {
     width: 310px;
     padding: 25px;
-    margin-top: 130px;
+    margin-top: 90px;
   }
   .icon {
     margin: 7px auto;
@@ -573,5 +576,4 @@ footer {
 #info_box {
   width: 80%;
 }
-
 }
