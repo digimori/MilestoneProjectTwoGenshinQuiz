@@ -4,7 +4,7 @@ quiz box on mobile needs to be shrunk again as it's making things scroll
 quiz box and results on  laptop view need to be pushed up
 
 # Genshin Impact Quiz App
-[Live Website](hhttps://digimori.github.io/MilestoneProjectTwoGenshinQuiz/)
+[Live Website](https://digimori.github.io/MilestoneProjectTwoGenshinQuiz/)
 [Github Respository](https://github.com/digimori/MilestoneProjectTwoGenshinQuiz)
 
 This Genshin Impact quiz app is designed to be a short and sweet way of testing a players knowledge of the current in-game lore. 
@@ -31,29 +31,36 @@ The first element that a player will encounter upon loading the page is a 'Start
 The background chosen is the in-game wish screen that every player is familiar with, beit happily or unhappily, depending on your luck. 
 I would have liked to have found a better contrasting logo of the game, but it's either this or white, and neither unfortunately are particularly pretty. 
 
-[Image of home screen here]
+![Start Screen](/assets/images/readmeImages/homescreen.png "Image of Start Button Screen")
+
 
 
 ### How to Play Box:
 
 Once the start button is clicked, the page will swap to a 'How to play' box, which contains information about the quiz.
-On this same box, there are Exit Game and New Game buttons, both with their own functionalit which will be explained below in the Navigation section.
+On this same box, there are Exit Game and New Game buttons, both with their own functionality which will be explained below in the Navigation section.
 
-[Image of how to here]
+![How to Play](/assets/images/readmeImages/howtoplay.png "Image of How to Play Screen")
 
 ### The Quiz box:
 
-[Image of quiz box here]
+The quiz box itself consists of a title, a section in where the questions are populated from the JavaScript text file, and the answers which are also populated in the same way.
+The answers are selectable, and once an answer has been selected, the others are disabled to disallow multiple selection. 
+There is also a counter underneath the answers that tells the user how far they have progressed through the quiz by displaying an 'x of 21' questions.
+There is a Next Question button at the bottom that then takes the user to the next question when they are ready.
 
+![Quiz box](/assets/images/readmeImages/thequiz.png "Image of Quiz Screen")
+![Next Button](/assets/images/readmeImages/nextbuttonandqcount.png "Image of Next Button")
 
 ### The Quiz Questions and Answers:
 
-[image here]
-
+![Questions and Answers - Correct](/assets/images/readmeImages/correctanswer.png "Image of Questions and Answer box")
+![Questions and Answers - Incorrect](/assets/images/readmeImages/incorrectAnswer.png "Image of Questions and Answer box")
 
 ### The Results page: 
 Hilichurl ending image
 
+![Start Screen](/assets/images/readmeImages/"Image of Start Button Screen")
 [image here]
 
 ## Navigation
