@@ -7,6 +7,8 @@ quiz box and results on  laptop view need to be pushed up
 + [Live Website](https://digimori.github.io/MilestoneProjectTwoGenshinQuiz/)
 + [Github Respository](https://github.com/digimori/MilestoneProjectTwoGenshinQuiz)
 
+## Developer Goals:
+
 This Genshin Impact quiz app is designed to be a short and sweet way of testing a players knowledge of the current in-game lore.   
 There are a variety of questions, each one more increasingly difficult than the last.   
 When the user clicks "Start Quiz", they will be shown a brief "How to play" box giving the rules and two buttons; One to exit the game and one to continue.  
@@ -17,6 +19,18 @@ When a user clicks an answer, they will be shown via a red or green overlay on i
 
  ## User Stories: 
  As a user I want blah blah blah
+- to be able to answer questions and be told which answer is correct or not clearly - also given the right one if incorrect is selected
+- easily start a new game
+- easily exit the quiz if want to after reading how to play
+
+ ## Design Choices:
+- - google fonts
+-- colours - traveler 
+- change the logo in PS to have a border
+
+ ## Wireframes:
+ Wireframes done in FIGMA.
+
 
 ## Features:
 
@@ -94,6 +108,8 @@ So these are the only metrics that I endeavoured to not fix, as they are technic
  - HTML/CSS validation
 
  ### Other tests:
+
+ #### Manual Testing:
  - amIresponsive
  - mediaquery dev tool testing
  - User testing
@@ -123,9 +139,21 @@ To clone into the Local IDE - in the terminal, type 'git clone' followed by the 
 
 
 # Credits:
-Coding Ninjas stuff
-- google fonts
--MHY for background and hilichurl/logo
+
+### Code: 
+Coding Ninjas - [How to Create a Quiz in Javascript]("https://www.codingninjas.com/codestudio/library/how-to-create-a-quiz-app-using-javascript")  
+- I used this as a general idea to begin with, but there were a lot of aspects that I didn't like and changed them.   
+I used it more as both inspiration and to refresh my memory on what I needed to consider when building.
+
+
+### Images and media: 
+[Hilichurl Logo]
+[Genshin Impact Logo]
+
+
+
 - Genshin Impact for having a lot of lore
+
+### Other: 
 - my awesome Programmer friends for looking over my code and pointing out my dumb choices
 - StackOverflow for just existing to be honest.
