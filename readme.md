@@ -105,14 +105,24 @@ The function it is called in is:
 So these are the only metrics that I endeavoured to not fix, as they are technically speaking, not errors.
 
 ### HTML & CSS:
- - HTML/CSS validation
+- All HTML has been validated at: [linkhere]
+- All CSS had been validated at: [linkHere]
+
 
  ### Other tests:
 
  #### Manual Testing:
  - amIresponsive
- - mediaquery dev tool testing
- - User testing
+
+ #### Media Queries: 
+##### Chrome DevTools:
+ I used the Chrome Dev tools to implement changes in real time before performing a final commit on the code itself.  
+ I did run into several issues with this whilst using Gitpod, as I was finding that it was not updating in real time, and so switched over to JSFiddle and VSCode for the remainder.
+
+##### Manual Testing: 
+- going through it on multiple browsers and phones
+- asked some friends who play the game and also have dev knowledge to go through.
+
 
 # Bugs: 
 Fairly late into testing, I noticed that I accidentally had half of the answer keys in my "questions" object as "answer" and  the rest as "answers" which meant it wouldn't go past a certain amount of questions before throwing an error.  
@@ -120,22 +130,26 @@ This was easily fixed by just changing the "answers" key back to just "answer" o
 
 
 # Deployment: - FORMAT THIS
-Github pages
-To deploy and run locally:
-Create a Gitpod account.
-Use the Chrome browser
-Download and install the Gitpod browser extension for Google Chrome.
-Restart browser after installation has completed.
-Log into Gitpod using your Github username and password.
-Navigate into your desired Gitpod repository
-Click the green "Gitpod" button on the top right of the repository file section.
-This will open the project into a Gitpod workspace and can then be worked on in a local setting.
-To deploy and run project on a local IDE:
-Follow This Link back to the Github project respository.
-Select the menu item above the repository files labelled "Code".
-To clone: Select the appropriate url or open to Git Desktop.
-To view on a web IDE: Click the dropdown "Open in Web IDE" and choose the appropriate IDE. This dropdown can also be used to clone the code into VSCode IDE.
-To clone into the Local IDE - in the terminal, type 'git clone' followed by the URL that can be copied from the aforementioned Code URL.
+##### Github pages
+**To deploy and run locally:**  
+
+1. Use the Chrome browser
+2. Create a Gitpod account at [Link]
+3. Download and install the Gitpod browser extension for Google Chrome.
+4. Restart browser after installation has completed.
+5. Log into Gitpod using your Github username and password. (If you don't already have a GitHub account, create one [here])
+6. Navigate into your desired Gitpod repository (This project's repository can be found both at the top of this README, and [here])
+7. Click the green "Gitpod" button on the top right of the repository file section.
+
+**This will open the project into a Gitpod workspace and can then be worked on in a local setting, such as VSCode.**
+
+**To deploy and run project on a local IDE:**
+1. Follow [This Link] back to the Github project respository.
+2. Select the menu item above the repository files labelled "Code".
+3. To clone: Select the appropriate url or open to Git Desktop.
+4. To view on a web IDE: Click the dropdown labelled "Open in Web IDE" on the top right of the repository, and choose the appropriate IDE.   
+This dropdown can also be used to clone the code into VSCode IDE.
+5. To clone into the Local IDE - in the terminal, type 'git clone' followed by the URL that can be copied from the aforementioned Code URL.
 
 
 # Credits:
