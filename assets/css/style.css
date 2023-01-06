@@ -8,13 +8,13 @@
 }
 
 body {
-  background-image: url('/assets/images/backgroundforquiz.png');
+  background-image: url('/..images/backgroundforquiz.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 #logo {
-  background-image: url('/assets/images/CITYPNG.png');
+  background-image: url('../images/CITYPNG.png');
   position: relative;
   margin: 0 auto;
   top: 25px;
@@ -328,7 +328,7 @@ footer {
 
 .icon {
   margin: 12px auto;
-  background-image: url('/assets/images/Hilichurl_3.png');
+  background-image: url('../images/Hilichurl_3.png');
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -523,7 +523,7 @@ footer {
   }
 
   #logo {
-    background-image: url('/assets/images/CITYPNG.png');
+    background-image: url('../images/CITYPNG.png');
     position: relative;
     margin: 0 auto;
     top: 10px;
