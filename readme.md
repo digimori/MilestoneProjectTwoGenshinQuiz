@@ -1,7 +1,5 @@
 THINGS TO FIX BEFORE SUBMISSION: 
-MEDIA QUERIES
-quiz box on mobile needs to be shrunk again as it's making things scroll
-quiz box and results on  laptop view need to be pushed up
+
 
 # Genshin Impact Quiz App
 + [Live Website](https://digimori.github.io/MilestoneProjectTwoGenshinQuiz/)
@@ -24,13 +22,23 @@ When a user clicks an answer, they will be shown via a red or green overlay on i
 - easily exit the quiz if want to after reading how to play
 
  ## Design Choices:
-- - google fonts
+
+ ###### Fonts:
+ I chose a [Google Font]() called "Philosopher", as it was the closest that I could find that matched the current in-game font.
+The fall-back font is 'Sans-Serif' as always.
+
+###### Colours: 
+[traveler image]
 -- colours - traveler 
+
+###### Logo: 
 - change the logo in PS to have a border
 
  ## Wireframes:
- Wireframes done in FIGMA.
-
+ Wireframes were created in FIGMA[link].
+- [Image]
+- [image]
+- [image]
 
 ## Features:
 
@@ -70,10 +78,16 @@ If the answer selected is incorrect, it will colour itself red and then also rev
 ![Questions and Answers - Incorrect](/assets/images/readmeImages/incorrectAnswer.png "Image of Questions and Answer box")  
 
 ### The Results page: 
-Hilichurl ending image
+The results page, I constructed to just be a basic "Congratulations" message and a part that tells you how much out of the total questions you scored correctly.   
+Beneath this, I also give the user an option to try again with a "New Game?" button.
 
-![Start Screen](/assets/images/readmeImages/"Image of Start Button Screen")
-[image here]
+![Results Page](/assets/images/readmeImages/)
+
+
+###### Hilichurl ending image:   
+This image is just an image file of the emojis that are found in the in-game chat.
+I thought it appropriate, as it isn't biased towards any character in particular (It is just a basic enemy) and thought it was just cute, happy, celebratory image to finish the quiz with.  
+![Hilichurl Image](/assets/images/Hilichurl_3.png "Image of Hilichurl Icon")
 
 ## Navigation
 The navigation is simple, consisting of a series of clearly labelled "Start Quiz", "Next Question", "New Game" "Exit Quiz" buttons.   
@@ -93,7 +107,7 @@ And finally, the "New Game?" button found on the Results page, will restart the 
 
 # Testing and Validation:
 ### JSHint Metrics: 
-![JSHint Metrics](/assets/images/readmeImages/jshintmetrics.png"Image of Metrics given by JSHint")  
+![JSHint Metrics](/assets/images/readmeImages/jshintmetrics.png "Image of Metrics given by JSHint")  
 
 There are three flags that I left in the code here and the reasons are:  
 - The $ not recognised by JSHint is due to me using jQuery on certain lines of code, these lines being:
@@ -105,9 +119,11 @@ The function it is called in is:
 So these are the only metrics that I endeavoured to not fix, as they are technically speaking, not errors.
 
 ### HTML & CSS:
-- All HTML has been validated at: [linkhere]
-- All CSS had been validated at: [linkHere]
-
+- All HTML has been validated at: [HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdigimori.github.io%2FMilestoneProjectTwoGenshinQuiz%2F)      
+![HTML Validation](/assets/images/readmeImages/htmlvalidatorCheck.png "Image of HTML validation")    
+  
+- All CSS had been validated at: [CSS Validation](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdigimori.github.io%2FMilestoneProjectTwoGenshinQuiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)  
+![CSS Validation](/assets/images/readmeImages/CSSvalidatorCheck.png "Image of CSS Validation")
 
  ### Other tests:
 
@@ -134,17 +150,17 @@ This was easily fixed by just changing the "answers" key back to just "answer" o
 **To deploy and run locally:**  
 
 1. Use the Chrome browser
-2. Create a Gitpod account at [Link]
+2. Create a Gitpod account at [this link](https://www.gitpod.io/)
 3. Download and install the Gitpod browser extension for Google Chrome.
 4. Restart browser after installation has completed.
-5. Log into Gitpod using your Github username and password. (If you don't already have a GitHub account, create one [here])
-6. Navigate into your desired Gitpod repository (This project's repository can be found both at the top of this README, and [here])
+5. Log into Gitpod using your Github username and password. (If you don't already have a GitHub account, create one [here](https://github.com/)
+6. Navigate into your desired Gitpod repository (This project's repository can be found both at the top of this README, and [here](https://github.com/digimori/MilestoneProjectTwoGenshinQuiz)  
 7. Click the green "Gitpod" button on the top right of the repository file section.
 
 **This will open the project into a Gitpod workspace and can then be worked on in a local setting, such as VSCode.**
 
 **To deploy and run project on a local IDE:**
-1. Follow [This Link] back to the Github project respository.
+1. Follow [This link](https://github.com/digimori/MilestoneProjectTwoGenshinQuiz) back to the Github project respository.
 2. Select the menu item above the repository files labelled "Code".
 3. To clone: Select the appropriate url or open to Git Desktop.
 4. To view on a web IDE: Click the dropdown labelled "Open in Web IDE" on the top right of the repository, and choose the appropriate IDE.   
@@ -155,8 +171,8 @@ This dropdown can also be used to clone the code into VSCode IDE.
 # Credits:
 
 ### Code: 
-Coding Ninjas - [How to Create a Quiz in Javascript]("https://www.codingninjas.com/codestudio/library/how-to-create-a-quiz-app-using-javascript")  
-- I used this as a general idea to begin with, but there were a lot of aspects that I didn't like and changed them.   
+Coding Ninjas - [How to Create a Quiz in Javascript]("https://www.codingninjas.com/codestudio/library/how-to-create-a-quiz-app-using-javascript")    
+I used this as a general idea to begin with, but there were a lot of aspects that I didn't like and changed them.   
 I used it more as both inspiration and to refresh my memory on what I needed to consider when building.
 
 
