@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url('/..images/backgroundforquiz.png');
+  background-image: url('../images/backgroundforquiz.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -94,7 +94,7 @@ body {
   height: 450px;
   transform: translate(-50%, -50%) scale(1);
   opacity: 0;
-  margin-top: 200px;
+  margin-top: 180px;
 }
 
 .ruleTitle {
@@ -162,7 +162,7 @@ body {
   height: 450px;
   transform: translate(-50%, -50%) scale(1);
   opacity: 0;
-  margin-top: -400px;
+  margin-top: -450px;
 }
 
 #questionText,
@@ -384,7 +384,7 @@ footer {
 
   #info_box {
     width: 85%;
-    margin-top: 150px;
+    margin-top: 100px;
     height: 300px;
   }
 
@@ -419,7 +419,7 @@ footer {
     box-shadow: 0px 1px 2px 1px;
     height: 400px;
     opacity: 0;
-    margin-top: -280px;
+    margin-top: -250px;
   }
 
   #quiz header {
@@ -590,5 +590,8 @@ footer {
 @media screen and (min-width: 802px) and (max-width: 1280px) {
   #quiz {
     margin-top: -500px;
+  }
+  #results {
+    margin-top: 100px; 
   }
 }
