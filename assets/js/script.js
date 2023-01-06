@@ -225,9 +225,11 @@ function nextQuestion() {
     questionCount++;
     questionNum++;
     counter(questionNum);
-  } else if (questionCount == questions.length - 2) {
-    let endOfQues = document.getElementById("nextButton").textContent;
-    endOfQues.innerHTML = "Results";
+  } else if (questionCount == questions.length) {
+    let endOfQues = document.getElementById("nextButton").innerHTML = "Results";
+    document.getElementById("nextButton").onclick = function() {
+      showResults();
+      };
   } else {
     console.log("End of questions");
     showResults();
