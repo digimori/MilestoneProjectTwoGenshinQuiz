@@ -28,7 +28,7 @@ When a user clicks an answer, they will be shown via a red or green overlay on i
 The fall-back font is 'Sans-Serif' as always.
 
 ###### Colours: 
-![Traveler Colour profile](/assets/images/f3b153ed1d3a9991bbe513f5243d40d1.jpg "Image for colour profile")  
+![Traveler Colour profile](f3b153ed1d3a9991bbe513f5243d40d1.jpg "Image for colour profile")  
 -- colours - traveler 
 
 ###### Logo: 
@@ -36,10 +36,10 @@ The fall-back font is 'Sans-Serif' as always.
 
  ## Wireframes:
  Wireframes were created in [FIGMA](https://www.figma.com/)   
-- ![Start Page](/assets/images/readmeImages/startpagewireframe.png "Image for Start wireframe")
-- ![Rules](/assets/images/readmeImages/ruleswireframe.png "Image for Rules wireframe")
-- ![Quiz page](/assets/images/readmeImages/Quizpagewireframe.png "Image for Quiz wireframe")
-- ![Results](/assets/images/readmeImages/resultswireframe.png "Image for results wireframe")
+- ![Start Page](readmeImages/startpagewireframe.png "Image for Start wireframe")
+- ![Rules](readmeImages/ruleswireframe.png "Image for Rules wireframe")
+- ![Quiz page](readmeImages/Quizpagewireframe.png "Image for Quiz wireframe")
+- ![Results](readmeImages/resultswireframe.png "Image for results wireframe")
 
 ## Features:
 
@@ -49,14 +49,14 @@ The first element that a player will encounter upon loading the page is a 'Start
 The background chosen is the in-game wish screen that every player is familiar with, beit happily or unhappily, depending on your luck. 
 I would have liked to have found a better contrasting logo of the game, but it's either this or white, and neither unfortunately are particularly pretty. 
 
-![Start Screen](/assets/images/readmeImages/homescreen.png "Image of Start Button Screen")
+![Start Screen](readmeImages/homescreen.png "Image of Start Button Screen")
 
 ### How to Play Box:
 
 Once the start button is clicked, the page will swap to a 'How to play' box, which contains information about the quiz.
 On this same box, there are Exit Game and New Game buttons, both with their own functionality which will be explained below in the Navigation section.
 
-![How to Play](/assets/images/readmeImages/howtoplay.png "Image of How to Play Screen")
+![How to Play](readmeImages/howtoplay.png "Image of How to Play Screen")
 
 ### The Quiz box:
 
@@ -64,31 +64,31 @@ The quiz box itself consists of a title, a section in where the questions are po
 The answers are selectable, and once an answer has been selected, the others are disabled to disallow multiple selection.  
 There is also a counter underneath the answers that tells the user how far they have progressed through the quiz by displaying an 'x of 21' questions.   
   
-![Quiz box](/assets/images/readmeImages/thequiz.png "Image of Quiz Screen")  
+![Quiz box](readmeImages/thequiz.png "Image of Quiz Screen")  
   
 There is a Next Question button at the bottom that then takes the user to the next question when they are ready.  
   
-![Next Button](/assets/images/readmeImages/nextbuttonandqcount.png "Image of Next Button")  
+![Next Button](readmeImages/nextbuttonandqcount.png "Image of Next Button")  
   
 ### The Quiz Questions and Answers:
 The questions, when clicked will change colour to signal a correct or incorrect answer; green for correct, red for incorrect.   
 Once an answer is selected, the user cannot choose another one and must proceed to the next question.  
 If the answer selected is incorrect, it will colour itself red and then also reveal the correct answer in green.  
   
-![Questions and Answers - Correct](/assets/images/readmeImages/correctanswer.png "Image of Questions and Answer box")  
-![Questions and Answers - Incorrect](/assets/images/readmeImages/incorrectAnswer.png "Image of Questions and Answer box")  
+![Questions and Answers - Correct](readmeImages/correctanswer.png "Image of Questions and Answer box")  
+![Questions and Answers - Incorrect](readmeImages/incorrectAnswer.png "Image of Questions and Answer box")  
 
 ### The Results page: 
 The results page, I constructed to just be a basic "Congratulations" message and a part that tells you how much out of the total questions you scored correctly.   
 Beneath this, I also give the user an option to try again with a "New Game?" button.
 
-![Results Page](/assets/images/readmeImages/)
+![Results Page](readmeImages/)
 
 
 ###### Hilichurl ending image:   
 This image is just an image file of the emojis that are found in the in-game chat.
 I thought it appropriate, as it isn't biased towards any character in particular (It is just a basic enemy) and thought it was just cute, happy, celebratory image to finish the quiz with.  
-![Hilichurl Image](/assets/images/Hilichurl_3.png "Image of Hilichurl Icon")
+![Hilichurl Image](Hilichurl_3.png "Image of Hilichurl Icon")
 
 ## Navigation
 The navigation is simple, consisting of a series of clearly labelled "Start Quiz", "Next Question", "New Game" "Exit Quiz" buttons.   
@@ -108,7 +108,7 @@ And finally, the "New Game?" button found on the Results page, will restart the 
 
 # Testing and Validation:
 ### JSHint Metrics: 
-![JSHint Metrics](/assets/images/readmeImages/jshintmetrics.png "Image of Metrics given by JSHint")  
+![JSHint Metrics](readmeImages/jshintmetrics.png "Image of Metrics given by JSHint")  
 
 There are three flags that I left in the code here and the reasons are:  
 - The $ not recognised by JSHint is due to me using jQuery on certain lines of code, these lines being:
@@ -121,10 +121,10 @@ So these are the only metrics that I endeavoured to not fix, as they are technic
 
 ### HTML & CSS:
 - All HTML has been validated at: [HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdigimori.github.io%2FMilestoneProjectTwoGenshinQuiz%2F)      
-![HTML Validation](/assets/images/readmeImages/htmlvalidatorCheck.png "Image of HTML validation")    
+![HTML Validation](readmeImages/htmlvalidatorCheck.png "Image of HTML validation")    
   
 - All CSS had been validated at: [CSS Validation](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdigimori.github.io%2FMilestoneProjectTwoGenshinQuiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)  
-![CSS Validation](/assets/images/readmeImages/CSSvalidatorCheck.png "Image of CSS Validation")
+![CSS Validation](readmeImages/CSSvalidatorCheck.png "Image of CSS Validation")
 
  ### Other tests:
  
