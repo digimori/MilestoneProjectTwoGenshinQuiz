@@ -28,17 +28,18 @@ When a user clicks an answer, they will be shown via a red or green overlay on i
 The fall-back font is 'Sans-Serif' as always.
 
 ###### Colours: 
-[traveler image]
+![Traveler Colour profile](/assets/images/f3b153ed1d3a9991bbe513f5243d40d1.jpg "Image for colour profile")  
 -- colours - traveler 
 
 ###### Logo: 
 - change the logo in PS to have a border
 
  ## Wireframes:
- Wireframes were created in FIGMA[link].
-- [Image]
-- [image]
-- [image]
+ Wireframes were created in [FIGMA](https://www.figma.com/)   
+- ![Start Page](/assets/images/readmeImages/startpagewireframe.png "Image for Start wireframe")
+- ![Rules](/assets/images/readmeImages/ruleswireframe.png "Image for Rules wireframe")
+- ![Quiz page](/assets/images/readmeImages/Quizpagewireframe.png "Image for Quiz wireframe")
+- ![Results](/assets/images/readmeImages/resultswireframe.png "Image for results wireframe")
 
 ## Features:
 
