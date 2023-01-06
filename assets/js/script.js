@@ -227,9 +227,9 @@ function nextQuestion() {
     counter(questionNum);
   } else if (questionCount == questions.length) {
     let endOfQues = document.getElementById("nextButton").innerHTML = "Results";
-    document.getElementById("nextButton").onclick = function() {
+    document.getElementById("nextButton").onclick = function () {
       showResults();
-      };
+    };
   } else {
     console.log("End of questions");
     showResults();

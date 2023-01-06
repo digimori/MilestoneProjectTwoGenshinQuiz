@@ -367,7 +367,7 @@ footer {
   border: 2px solid #f5e1d5;
 }
 
-/* ------------------------------------------------------------------- Media Queries -------------------------------------------------------- */ 
+/* ------------------------------------------------------------------- Media Queries -------------------------------------------------------- */
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   #startButton {
@@ -375,15 +375,18 @@ footer {
     width: 70%;
     position: absolute;
   }
+
   #startQuiz {
     margin: 0 auto;
     width: 120px;
     height: 40px;
   }
+
   #logoText {
     margin: 0 auto;
     padding-left: 80px;
   }
+
   #logo {
     margin: 0 auto;
     top: 1px;
@@ -391,11 +394,13 @@ footer {
     height: 160px;
     width: 280px;
   }
+
   #info_box {
     width: 85%;
     margin-top: 150px;
     height: 300px;
   }
+
   .buttons {
     height: 80px;
     display: flex;
@@ -403,11 +408,13 @@ footer {
     margin-top: -20px;
     justify-content: center;
   }
+
   .quizRules .info {
     margin: 10px 0;
     font-size: 15px;
     line-height: 18px;
   }
+
   .quizRules {
     width: 80%;
     padding: 10px 10px;
@@ -415,25 +422,30 @@ footer {
     font-weight: 600;
     font-size: 12px;
   }
+
   .ruleTitle {
     height: 15px;
   }
+
   #quiz {
     width: 290px;
     box-shadow: 0px 1px 2px 1px;
     height: 400px;
     opacity: 0;
     margin-top: -280px;
-}
-#quiz header {
-  height: 50px;
-}
+  }
+
+  #quiz header {
+    height: 50px;
+  }
+
   #quiz header .title {
     font-size: 18px;
     font-weight: 700;
     color: #3F292C;
     padding-left: 30px;
   }
+
   #quiz #questionText {
     padding: 5px 0px 5px 0px;
     margin: 0 auto;
@@ -441,16 +453,19 @@ footer {
     font-weight: 600;
     line-height: 13px;
   }
+
   .option {
     font-size: 12px;
     letter-spacing: 1px;
   }
+
   #totalQuestions {
     font-size: 12px;
     margin: -20px auto;
     text-align: center;
     padding-bottom: 5px;
   }
+
   #nextButton {
     font-weight: 900;
     letter-spacing: 1px;
@@ -459,6 +474,7 @@ footer {
     margin: 25px auto;
     width: 40%;
   }
+
   #exitQuizStart,
   #newGame {
     margin: 0 12px;
@@ -471,24 +487,29 @@ footer {
     height: 50px;
     border: 2px solid #3F292C;
   }
+
   #results {
     width: 310px;
     padding: 25px;
     margin-top: 90px;
   }
+
   .icon {
     margin: 7px auto;
     height: 120px;
     width: 120px;
   }
+
   #results h3 {
     padding-left: 10px;
     font-size: 15px;
   }
+
   #score {
     padding: 0;
     ;
   }
+
   #score span {
     margin: 8px 0;
     font-size: 12px;
@@ -513,6 +534,7 @@ footer {
     z-index: 20;
     margin: 0 auto;
   }
+
   #logotext h1 {
     color: #fff;
     width: 120px;
@@ -521,6 +543,7 @@ footer {
     font-weight: 700;
     height: 32px;
   }
+
   #logo {
     background-image: url('/assets/images/[CITYPNG.COM]HD\ Official\ Genshin\ Impact\ Game\ Logo\ PNG\ -\ 1320x629.png');
     position: relative;
@@ -532,6 +555,7 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
   }
+
   #info_box {
     background-color: #fefff6;
     width: 80%;
@@ -542,6 +566,7 @@ footer {
     opacity: 0;
     margin-top: 200px;
   }
+
   #quiz {
     width: 400px;
     background-color: #fefff6;
@@ -553,17 +578,21 @@ footer {
     opacity: 0;
     margin-top: -400px;
   }
+
   footer {
     margin: 0 auto;
   }
+
   #nextButton {
     width: 160px;
     height: 40px;
     font-size: 18px;
   }
+
   #quiz #questionText {
     font-size: 18px;
   }
+
   #results {
     margin-top: 80px;
     width: 450px;
@@ -573,9 +602,9 @@ footer {
 /* -----------------------  -----------------------  MEDIA QUERY 769PX - 1024PX ----------------------- -------------------------------*/
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-#info_box {
-  width: 80%;
-}
+  #info_box {
+    width: 80%;
+  }
 }
 
 /*------------------------------------------------ MEDIA QUERY 1280x802px ---------------------------------------------------------*/
@@ -583,5 +612,5 @@ footer {
 @media screen and (min-width: 802px) and (max-width: 1280px) {
   #quiz {
     margin-top: -500px;
-  } 
+  }
 }
