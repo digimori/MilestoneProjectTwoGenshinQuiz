@@ -126,6 +126,7 @@ So these are the only metrics that I endeavoured to not fix, as they are technic
 ![CSS Validation](/assets/images/readmeImages/CSSvalidatorCheck.png "Image of CSS Validation")
 
  ### Other tests:
+ 
 
  #### Manual Testing:
  - amIresponsive

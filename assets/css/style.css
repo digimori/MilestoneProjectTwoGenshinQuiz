@@ -14,7 +14,7 @@ body {
 }
 
 #logo {
-  background-image: url('/assets/images/[CITYPNG.COM]HD\ Official\ Genshin\ Impact\ Game\ Logo\ PNG\ -\ 1320x629.png');
+  background-image: url('/assets/images/CITYPNG.png');
   position: relative;
   margin: 0 auto;
   top: 25px;
@@ -25,14 +25,6 @@ body {
   background-repeat: no-repeat;
 }
 
-#logotext h1 {
-  color: #fff;
-  width: 120px;
-  margin: -40px auto;
-  font-size: 25px;
-  font-weight: 700;
-  height: 32px;
-}
 
 /* ----------------------------------------- Styles for 'Start Quiz' button ----------------------------------------- */
 
@@ -382,11 +374,6 @@ footer {
     height: 40px;
   }
 
-  #logoText {
-    margin: 0 auto;
-    padding-left: 80px;
-  }
-
   #logo {
     margin: 0 auto;
     top: 1px;
@@ -535,17 +522,8 @@ footer {
     margin: 0 auto;
   }
 
-  #logotext h1 {
-    color: #fff;
-    width: 120px;
-    margin: 0px auto;
-    font-size: 30px;
-    font-weight: 700;
-    height: 32px;
-  }
-
   #logo {
-    background-image: url('/assets/images/[CITYPNG.COM]HD\ Official\ Genshin\ Impact\ Game\ Logo\ PNG\ -\ 1320x629.png');
+    background-image: url('/assets/images/CITYPNG.png');
     position: relative;
     margin: 0 auto;
     top: 10px;
