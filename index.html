@@ -1,75 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Genshin Impact Quiz</title>
-  </head>
 
-  <body>
-    <!--Start Button and Logo -->
-    
-    <div id="logo"></div>
-    <div id="startQuiz">
-      <button id="startButton">Start Quiz</button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Genshin Impact Quiz</title>
+</head>
+
+<body>
+  <!--Start Button and Logo -->
+
+  <div id="logo"></div>
+  <div id="startQuiz">
+    <button id="startButton">Start Quiz</button>
+  </div>
+
+  <!--Information box-->
+
+  <div id="info_box">
+    <div class="ruleTitle">
+      <span>How to play</span>
     </div>
-
-    <!--Information box-->
-
-    <div id="info_box">
-      <div class="ruleTitle">
-        <span>How to play</span>
+    <div class="quizRules">
+      <div class="info"><span class="bullet">◎</span> You must select an answer in order to proceed through the quiz
       </div>
-      <div class="quizRules">
-        <div class="info"><span class="bullet">◎</span> You must select an answer in order to proceed through the quiz</div>
-        <div class="info"><span class="bullet">◎</span> No take-backsies, once selected, you've made your choice
-        </div>
-        <div class="info"><span class="bullet">◎</span> You will accumulate points for correct answers</div>
+      <div class="info"><span class="bullet">◎</span> No take-backsies, once selected, you've made your choice
       </div>
-      <div class="buttons">
-        <button id="exitQuizStart">Exit Quiz</button>
-        <button id="newGame">New Game</button>
-      </div>
+      <div class="info"><span class="bullet">◎</span> You will accumulate points for correct answers</div>
     </div>
-
-    <!--Quiz box-->
-
-    <div id="quiz">
-      <header>
-        <div class="title">Genshin Impact Quiz</div>
-      </header>
-      <div id="questionBox">
-        <div id="questionText">
-        </div>
-        <div id="answerList">
-        </div>
-      </div>
-      <!--Footer section -->
-      <footer>
-        <div id="totalQuestions">
-          <p><span>1</span> of 12</p>
-        </div>
-        <button id="nextButton" disabled>Next Question</button>
-      </footer>
+    <div class="buttons">
+      <button id="exitQuizStart">Exit Quiz</button>
+      <button id="newGame">New Game</button>
     </div>
+  </div>
 
-    <!-- Results box -->
+  <!--Quiz box-->
 
-    <div id="results">
-      <div class="icon">
+  <div id="quiz">
+    <header>
+      <div class="title">Genshin Impact Quiz</div>
+    </header>
+    <div id="questionBox">
+      <div id="questionText">
       </div>
-      <div class="congrats">
-        <h3>Congratulations! You've completed the quiz!</h3>
-      </div>
-      <div id="score">
-      </div>
-      <div class="endButtons">
-        <button id="exitQuiz">New Game?</button>
+      <div id="answerList">
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-    <script src="assets/js/questions.js"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+    <!--Footer section -->
+    <footer>
+      <div id="totalQuestions">
+        <p><span>1</span> of 12</p>
+      </div>
+      <button id="nextButton" disabled>Next Question</button>
+    </footer>
+  </div>
+
+  <!-- Results box -->
+
+  <div id="results">
+    <div class="icon">
+    </div>
+    <div class="congrats">
+      <h3>Congratulations! You've completed the quiz!</h3>
+    </div>
+    <div id="score">
+    </div>
+    <div class="endButtons">
+      <button id="exitQuiz">New Game?</button>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/questions.js"></script>
+</body>
+
 </html>
