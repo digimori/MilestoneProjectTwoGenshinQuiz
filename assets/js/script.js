@@ -95,6 +95,7 @@ function nextQuestion() {
     questionNum++;
     counter(questionNum);
   } else if (questionCount == questions.length) {
+    $('#nextButton').prop("disabled", false);
     let endOfQues = document.getElementById("nextButton").innerHTML = "Results";
     document.getElementById("nextButton").onclick = function() {
       showResults();
