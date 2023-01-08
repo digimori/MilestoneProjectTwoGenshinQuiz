@@ -24,11 +24,11 @@ When a user clicks an answer, they will be shown via a red or green overlay on i
  ## Design Choices:
 
  ###### Fonts:
- I chose a [Google Font]() called "Philosopher", as it was the closest that I could find that matched the current in-game font.
+ I chose a [Google Font](https://fonts.google.com/) called "Philosopher", as it was the closest that I could find that matched the current in-game font.
 The fall-back font is 'Sans-Serif' as always.
 
 ###### Colours: 
-![Traveler Colour profile](f3b153ed1d3a9991bbe513f5243d40d1.jpg "Image for colour profile")  
+![Traveler Colour profile](/assets/images/f3b153ed1d3a9991bbe513f5243d40d1.jpg "Image for colour profile")  
 -- colours - traveler 
 
 ###### Logo: 
