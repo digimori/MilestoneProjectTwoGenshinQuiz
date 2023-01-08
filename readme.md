@@ -149,7 +149,7 @@ This was easily fixed by just changing the "answers" key back to just "answer" o
 
 # Deployment: - FORMAT THIS
 ##### Github pages
-**To deploy and run locally:**  
+**To deploy and run locally via an IDE:**  
 
 1. Use the Chrome browser
 2. Create a Gitpod account at [this link](https://www.gitpod.io/)
@@ -161,13 +161,23 @@ This was easily fixed by just changing the "answers" key back to just "answer" o
 
 **This will open the project into a Gitpod workspace and can then be worked on in a local setting, such as VSCode.**
 
-**To deploy and run project on a local IDE:**
+**Clone and Fork:**
 1. Follow [This link](https://github.com/digimori/MilestoneProjectTwoGenshinQuiz) back to the Github project respository.
 2. Select the menu item above the repository files labelled "Code".
 3. To clone: Select the appropriate url or open to Git Desktop.
 4. To view on a web IDE: Click the dropdown labelled "Open in Web IDE" on the top right of the repository, and choose the appropriate IDE.   
 This dropdown can also be used to clone the code into VSCode IDE.
 5. To clone into the Local IDE - in the terminal, type 'git clone' followed by the URL that can be copied from the aforementioned Code URL.
+6. To fork - Follow the instructions as outlined in the Github Docs [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
+
+**To Deploy the respoitory to Github pages:**
+1. Open the Github repository [here]()
+2. Click the 'Settings' tab above the repository.
+3. In the side bar to the left, click on "Pages".
+4. Under "Build and Deployment", select the "Deploy from branch" under the "Source" tab.
+5. In the "Branch" drop-down below, select the '/main' branch and click save.
+6. This should create an accessible page once it has refreshed.
+7. Follow steps 1-3 again to find the deployed page, which will now be above the "Build and Deployment" section.
 
 
 # Credits:
