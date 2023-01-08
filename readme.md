@@ -1,6 +1,3 @@
-THINGS TO FIX BEFORE SUBMISSION: 
-
-
 # Genshin Impact Quiz App
 + [Live Website](https://digimori.github.io/MilestoneProjectTwoGenshinQuiz/)
 + [Github Respository](https://github.com/digimori/MilestoneProjectTwoGenshinQuiz)
@@ -16,23 +13,25 @@ When a user clicks an answer, they will be shown via a red or green overlay on i
 
 
  ## User Stories: 
- As a user I want blah blah blah
-- to be able to answer questions and be told which answer is correct or not clearly - also given the right one if incorrect is selected
-- easily start a new game
-- easily exit the quiz if want to after reading how to play
+ As a user I want: 
+- To be able to answer questions relating to the topic at hand, this being Genshin Impact, and to be told which answer is correct or not clearly - also given the right one if incorrect is selected.  
+- To be able to easily start a new game once the rules have been read, and then again at the end, should I wish to retry.
+- Easily exit the quiz if want to after reading how to play. 
+- To be able to navigate through the quiz simply by pressing a "Next Question" button or equivelent.
 
  ## Design Choices:
 
- ###### Fonts:
+ ##### Fonts:
  I chose a [Google Font](https://fonts.google.com/) called "Philosopher", as it was the closest that I could find that matched the current in-game font.
 The fall-back font is 'Sans-Serif' as always.
 
-###### Colours: 
-![Traveler Colour profile](/assets/images/f3b153ed1d3a9991bbe513f5243d40d1.jpg "Image for colour profile")  
--- colours - traveler 
+##### Colours: 
+![Traveler Colour profile](/assets/images/f3b153ed1d3a9991bbe513f5243d40d1.jpg "Image for colour profile")    
+I chose these colours as they were in line with the main game character's colour scheme.
 
-###### Logo: 
-- change the logo in PS to have a border
+##### Logo: 
+![New Logo]()  
+I re-rendered the logo in Photoshop, as it originally blended in far too much with the background. Giving it an outline helped this.
 
  ## Wireframes:
  Wireframes were created in [FIGMA](https://www.figma.com/)   
@@ -85,7 +84,7 @@ Beneath this, I also give the user an option to try again with a "New Game?" but
 ![Results Page](readmeImages/)
 
 
-###### Hilichurl ending image:   
+##### Hilichurl ending image:   
 This image is just an image file of the emojis that are found in the in-game chat.
 I thought it appropriate, as it isn't biased towards any character in particular (It is just a basic enemy) and thought it was just cute, happy, celebratory image to finish the quiz with.  
 ![Hilichurl Image](Hilichurl_3.png "Image of Hilichurl Icon")
@@ -95,29 +94,27 @@ The navigation is simple, consisting of a series of clearly labelled "Start Quiz
 
 ### How to Play Box - The buttons:
 The "Start Quiz" button will open up the "How to Play" section, the "New Game" button within that section will start the quiz, and the "Exit Quiz" button will take the user back to the "Start Quiz" page.  I wanted to make the navigation simple, as the userbase for Genshin Impact consists of both adults and children alike.
-
+![image]
 
 ## Next button:
 The "Next Question" will take the user to the next question. 
-
+![image
+]
 ## Results page buttons:
 And finally, the "New Game?" button found on the Results page, will restart the quiz.  
 [image of buttons here]
-
-
+![image]
 
 # Testing and Validation:
 ### JSHint Metrics: 
 ![JSHint Metrics](readmeImages/jshintmetrics.png "Image of Metrics given by JSHint")  
 
 There are three flags that I left in the code here and the reasons are:  
-- The $ not recognised by JSHint is due to me using jQuery on certain lines of code, these lines being:
-[Images here]
+- The $ not recognised by JSHint is due to me using jQuery on certain lines of code.
 
 - The "selectedAnswer" supposedly not being a variable. It's actually called in another function, linked back through the DOM. There is likely a better way to do this, but I found .setAttribute to be the only way that I could get it to function. 
-The function it is called in is:
 
-So these are the only metrics that I endeavoured to not fix, as they are technically speaking, not errors.
+So these are the only metrics that I endeavoured to not fix, as they are technically speaking, and confirmed with my mentor, not errors.
 
 ### HTML & CSS:
 - All HTML has been validated at: [HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdigimori.github.io%2FMilestoneProjectTwoGenshinQuiz%2F)      
@@ -128,9 +125,13 @@ So these are the only metrics that I endeavoured to not fix, as they are technic
 
  ### Other tests:
  
-
  #### Manual Testing:
- - amIresponsive
+![amIresponsive]()  
+I used [AmIResponsive] to give a snapshot of everything working on varying screen sizes:
+- 
+- 
+- 
+- 
 
  #### Media Queries: 
 ##### Chrome DevTools:
@@ -138,9 +139,8 @@ So these are the only metrics that I endeavoured to not fix, as they are technic
  I did run into several issues with this whilst using Gitpod, as I was finding that it was not updating in real time, and so switched over to JSFiddle and VSCode for the remainder.
 
 ##### Manual Testing: 
-- going through it on multiple browsers and phones
-- asked some friends who play the game and also have dev knowledge to go through.
-
+- I went through the quiz manually at each point of development by launching it both into Github pages, and via Gitpod's preview feature.
+- I also asked some friends who play the game and also have developer knowledge to go through it to help comb through any issues.
 
 # Bugs: 
 Fairly late into testing, I noticed that I accidentally had half of the answer keys in my "questions" object as "answer" and  the rest as "answers" which meant it wouldn't go past a certain amount of questions before throwing an error.  
