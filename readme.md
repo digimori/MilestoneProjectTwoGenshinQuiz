@@ -182,7 +182,7 @@ This dropdown can also be used to clone the code into VSCode IDE.
 ---
 
 ### Code: 
-Coding Ninjas - [How to Create a Quiz in Javascript]("https://www.codingninjas.com/codestudio/library/how-to-create-a-quiz-app-using-javascript")    
+Coding Ninjas - [How to Create a Quiz in Javascript](https://www.codingninjas.com/codestudio/library/how-to-create-a-quiz-app-using-javascript)    
 I used this as a general idea to begin with, but there were a lot of aspects that I didn't like and changed them.   
 I used it more as both inspiration and to refresh my memory on what I needed to consider when building.
 
