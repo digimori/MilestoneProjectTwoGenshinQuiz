@@ -1,9 +1,9 @@
-# Genshin Impact Quiz App
+# Genshin Impact Quiz App ---
 + [Live Website](https://digimori.github.io/MilestoneProjectTwoGenshinQuiz/)
 + [Github Respository](https://github.com/digimori/MilestoneProjectTwoGenshinQuiz)
 
 ## Developer Goals:
-
+---
 This Genshin Impact quiz app is designed to be a short and sweet way of testing a players knowledge of the current in-game lore.   
 There are a variety of questions, each one more increasingly difficult than the last.   
 When the user clicks "Start Quiz", they will be shown a brief "How to play" box giving the rules and two buttons; One to exit the game and one to continue.  
@@ -13,6 +13,7 @@ When a user clicks an answer, they will be shown via a red or green overlay on i
 
 
  ## User Stories: 
+ ---
  As a user I want: 
 - To be able to answer questions relating to the topic at hand, this being Genshin Impact, and to be told which answer is correct or not clearly - also given the right one if incorrect is selected.  
 - To be able to easily start a new game once the rules have been read, and then again at the end, should I wish to retry.
@@ -20,17 +21,17 @@ When a user clicks an answer, they will be shown via a red or green overlay on i
 - To be able to navigate through the quiz simply by pressing a "Next Question" button or equivelent.
 
  ## Design Choices:
-
- ##### Fonts:
+---
+ ### Fonts:
  I chose a [Google Font](https://fonts.google.com/) called "Philosopher", as it was the closest that I could find that matched the current in-game font.
 The fall-back font is 'Sans-Serif' as always.
 
-##### Colours: 
+### Colours: 
 ![Traveler Colour profile](/assets/images/f3b153ed1d3a9991bbe513f5243d40d1.jpg "Image for colour profile")    
 I chose these colours as they were in line with the main game character's colour scheme.
 
-##### Logo: 
-![New Logo]()  
+### Logo: 
+![New Logo](/assets/images/CITYPNG.png "Image for Logo")  
 I re-rendered the logo in Photoshop, as it originally blended in far too much with the background. Giving it an outline helped this.
 
  ## Wireframes:
@@ -41,7 +42,7 @@ I re-rendered the logo in Photoshop, as it originally blended in far too much wi
 - ![Results](readmeImages/resultswireframe.png "Image for results wireframe")
 
 ## Features:
-
+---
 ### The Start Button:
 
 The first element that a player will encounter upon loading the page is a 'Start Quiz' button. 
@@ -81,30 +82,31 @@ If the answer selected is incorrect, it will colour itself red and then also rev
 The results page, I constructed to just be a basic "Congratulations" message and a part that tells you how much out of the total questions you scored correctly.   
 Beneath this, I also give the user an option to try again with a "New Game?" button.
 
-![Results Page](readmeImages/)
+![Results Page](readmeImages/results.png "Image for results page")
 
-
-##### Hilichurl ending image:   
+### Hilichurl ending image:   
 This image is just an image file of the emojis that are found in the in-game chat.
 I thought it appropriate, as it isn't biased towards any character in particular (It is just a basic enemy) and thought it was just cute, happy, celebratory image to finish the quiz with.  
 ![Hilichurl Image](/assets/images/Hilichurl_3.png "Image of Hilichurl Icon")
 
 ## Navigation
+---
 The navigation is simple, consisting of a series of clearly labelled "Start Quiz", "Next Question", "New Game" "Exit Quiz" buttons.   
 
 ### How to Play Box - The buttons:
 The "Start Quiz" button will open up the "How to Play" section, the "New Game" button within that section will start the quiz, and the "Exit Quiz" button will take the user back to the "Start Quiz" page.  I wanted to make the navigation simple, as the userbase for Genshin Impact consists of both adults and children alike.
-![image](/readmeImages/buttonstostart.png)
+![Start and Exit](/readmeImages/buttonstostart.png "Images for Start screen")
 
-## Next button:
-The "Next Question" will take the user to the next question. 
-![image](/readmeImages/nextbuttonandqcount.png)
+### Next button:
+The "Next Question" will take the user to the next question.   
+![Next Question](/readmeImages/nextbuttonandqcount.png "Image for Next Question button")
 
-## Results page buttons:
+### Results page buttons:
 And finally, the "New Game?" button found on the Results page, will restart the quiz.  
-![image](/readmeImages/newgame.png)
+![New Game](/readmeImages/newgame.png "Image for Results Buttons")
 
-# Testing and Validation:
+## Testing and Validation:
+---
 ### JSHint Metrics: 
 ![JSHint Metrics](readmeImages/jshintmetrics.png "Image of Metrics given by JSHint")  
 
@@ -122,30 +124,31 @@ So these are the only metrics that I endeavoured to not fix, as they are technic
 - All CSS had been validated at: [CSS Validation](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdigimori.github.io%2FMilestoneProjectTwoGenshinQuiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)  
 ![CSS Validation](readmeImages/CSSvalidatorCheck.png "Image of CSS Validation")
 
- ### Other tests:
+ ## Other tests:
  
- #### Manual Testing:
-![amIresponsive](https://ui.dev/amiresponsive?url=https://digimori.github.io/MilestoneProjectTwoGenshinQuiz/)  
-I used [AmIResponsive] to give a snapshot of everything working on varying screen sizes  
+ ### Manual Testing:
+![amIresponsive](/readmeImages/AmIresponsive.png)    
+I used [AmIResponsive](https://ui.dev/amiresponsive?url=https://digimori.github.io/MilestoneProjectTwoGenshinQuiz/) to give a snapshot of everything working on varying screen sizes  
 
- #### Media Queries: 
-##### Chrome DevTools:
+ ### Media Queries: 
+#### Chrome DevTools:
  I used the Chrome Dev tools to implement changes in real time before performing a final commit on the code itself.  
  I did run into several issues with this whilst using Gitpod, as I was finding that it was not updating in real time, and so switched over to JSFiddle and VSCode for the remainder.
 
-##### Manual Testing: 
+#### Manual Testing: 
 - I went through the quiz manually at each point of development by launching it both into Github pages, and via Gitpod's preview feature.
 - I also asked some friends who play the game and also have developer knowledge to go through it to help comb through any issues.
 
-# Bugs: 
+## Bugs: 
 Fairly late into testing, I noticed that I accidentally had half of the answer keys in my "questions" object as "answer" and  the rest as "answers" which meant it wouldn't go past a certain amount of questions before throwing an error.  
 This was easily fixed by just changing the "answers" key back to just "answer" on all of the objects.
 
 
-# Deployment: - FORMAT THIS
-##### Github pages
-**To deploy and run locally via an IDE:**  
+## Deployment:
+---
+### Github: 
 
+**To deploy and run locally via an IDE:**  
 1. Use the Chrome browser
 2. Create a Gitpod account at [this link](https://www.gitpod.io/)
 3. Download and install the Gitpod browser extension for Google Chrome.
@@ -175,22 +178,19 @@ This dropdown can also be used to clone the code into VSCode IDE.
 7. Follow steps 1-3 again to find the deployed page, which will now be above the "Build and Deployment" section.
 
 
-# Credits:
+## Credits:
+---
 
 ### Code: 
 Coding Ninjas - [How to Create a Quiz in Javascript]("https://www.codingninjas.com/codestudio/library/how-to-create-a-quiz-app-using-javascript")    
 I used this as a general idea to begin with, but there were a lot of aspects that I didn't like and changed them.   
 I used it more as both inspiration and to refresh my memory on what I needed to consider when building.
 
-
 ### Images and media: 
-[Hilichurl Logo]
-[Genshin Impact Logo]
-
-
-
-- Genshin Impact for having a lot of lore
+- Hilichurl Logo for the results page was pulled from the in-game chat emojis.
+- Genshin Impact logo itself was from [CityPNG](https://www.citypng.com/), and edited in Photoshop.
+- The questions themselves are derived from the in-game lore, of which there is a lot of it.
 
 ### Other: 
-- my awesome Programmer friends for looking over my code and pointing out my dumb choices
+- My awesome programmer friends for looking over my code and pointing out my dumb choices in parts during moments I was about ready to give up.
 - StackOverflow for just existing to be honest.
