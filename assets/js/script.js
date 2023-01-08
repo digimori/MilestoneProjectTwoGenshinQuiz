@@ -69,7 +69,7 @@ function showAnswer() {
     }
   }
 }
-$('#nextButton').prop("disabled", false)
+$('#nextButton').prop("disabled", false);
 $(".option").addClass("disable");
 }
 
@@ -94,9 +94,7 @@ function nextQuestion() {
     questionCount++;
     questionNum++;
     counter(questionNum);
-  } else if (questionCount == questions.length) {
-    $('#nextButton').prop("disabled", false);
-    let endOfQues = document.getElementById("nextButton").innerHTML = "Results";
+  } else if (questionCount == questions.length - 1) { 
     document.getElementById("nextButton").onclick = function() {
       showResults();
       };

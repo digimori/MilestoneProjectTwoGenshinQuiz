@@ -87,23 +87,22 @@ Beneath this, I also give the user an option to try again with a "New Game?" but
 ##### Hilichurl ending image:   
 This image is just an image file of the emojis that are found in the in-game chat.
 I thought it appropriate, as it isn't biased towards any character in particular (It is just a basic enemy) and thought it was just cute, happy, celebratory image to finish the quiz with.  
-![Hilichurl Image](Hilichurl_3.png "Image of Hilichurl Icon")
+![Hilichurl Image](/assets/images/Hilichurl_3.png "Image of Hilichurl Icon")
 
 ## Navigation
 The navigation is simple, consisting of a series of clearly labelled "Start Quiz", "Next Question", "New Game" "Exit Quiz" buttons.   
 
 ### How to Play Box - The buttons:
 The "Start Quiz" button will open up the "How to Play" section, the "New Game" button within that section will start the quiz, and the "Exit Quiz" button will take the user back to the "Start Quiz" page.  I wanted to make the navigation simple, as the userbase for Genshin Impact consists of both adults and children alike.
-![image]
+![image](/readmeImages/buttonstostart.png)
 
 ## Next button:
 The "Next Question" will take the user to the next question. 
-![image
-]
+![image](/readmeImages/nextbuttonandqcount.png)
+
 ## Results page buttons:
 And finally, the "New Game?" button found on the Results page, will restart the quiz.  
-[image of buttons here]
-![image]
+![image](/readmeImages/newgame.png)
 
 # Testing and Validation:
 ### JSHint Metrics: 
@@ -126,12 +125,8 @@ So these are the only metrics that I endeavoured to not fix, as they are technic
  ### Other tests:
  
  #### Manual Testing:
-![amIresponsive]()  
-I used [AmIResponsive] to give a snapshot of everything working on varying screen sizes:
-- 
-- 
-- 
-- 
+![amIresponsive](https://ui.dev/amiresponsive?url=https://digimori.github.io/MilestoneProjectTwoGenshinQuiz/)  
+I used [AmIResponsive] to give a snapshot of everything working on varying screen sizes  
 
  #### Media Queries: 
 ##### Chrome DevTools:
@@ -171,7 +166,7 @@ This dropdown can also be used to clone the code into VSCode IDE.
 6. To fork - Follow the instructions as outlined in the Github Docs [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
 
 **To Deploy the respoitory to Github pages:**
-1. Open the Github repository [here]()
+1. Open the Github repository [here](https://github.com/digimori/MilestoneProjectTwoGenshinQuiz)
 2. Click the 'Settings' tab above the repository.
 3. In the side bar to the left, click on "Pages".
 4. Under "Build and Deployment", select the "Deploy from branch" under the "Source" tab.
